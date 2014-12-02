@@ -1,6 +1,6 @@
-#STEMFYLA - PSD code conversion
-
 [TOC] 
+
+#STEMFYLA - PSD code conversion
 
 ***
 
@@ -19,6 +19,14 @@
 Modify: 
 "oxi like us on" => "Κάντε μας like στο " 
  
+***
+
+## Installation
+1. Install [git](http://git-scm.com/downloads)
+2. On your git bash:
+	- At your developing environment, at your location you prefer to save this repo: `git clone git@bitbucket.org:stemfyla/stemfyla.bitbucket.org.git`
+	- Your bitbucket username/password will be asked. If you prefer to not input these credentials each time you push/pull then you can [Set up SSH for Git](https://confluence.atlassian.com/display/BITBUCKET/Set+up+SSH+for+Git)
+	- All files are now downloaded.
 ***
 
 ##Tools
