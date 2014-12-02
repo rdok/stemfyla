@@ -9,8 +9,11 @@
 ***
  
 ## TODO
-### Nav Bar
-- Αρχική, Υλικό, Κατάλογος, Ζωντανό Πρόγραμμα, Επικοινωνία
+### Convert PSD to website - done
+### Nav Bar - done
+- Αρχική, Υλικό, Κατάλογος, Ζωντανό Πρόγραμμα, Επικοινωνία 
+
+### Fix UI for Motorola RAZR V3m
 
 ##Issues
 - Request family fonts. Reason: Adobe Photoshop CC 2014 is not able to recognize psd family fonts.
