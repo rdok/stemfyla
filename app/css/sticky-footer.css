@@ -7,7 +7,7 @@ html {
 
 body {
     /* Margin bottom by footer height */
-    margin-bottom: 80px;
+    margin-bottom: 110px;
 }
 
 .footer {
@@ -15,15 +15,16 @@ body {
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
-    height: 90px;
-    padding-top: 10px;
+    height: 130px;
+    padding-top: 20px;
     background-color: transparent;
     border-top: 1px solid #000000;
+
+    margin-bottom: 30px;
 }
 
 #facebook-id-fontawesome {
     color: #3a5795;
-    padding-right: 10px;
 }
 
 .text-muted {
