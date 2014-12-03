@@ -10,14 +10,14 @@ body {
     padding-top: 30px !important;
     font-family: 'Roboto', sans-serif;
     font-weight: 900 !important;
-    font-size: 19px !important;
+    font-size: 2em !important;
     background: none;
     color: #000000;
     min-height: 400px;
 }
 
 .footer-social {
-    font-size: 14px !important;
+    font-size: .7em !important;
     font-weight: 900 !important;
     padding-top: 10px;
 }
