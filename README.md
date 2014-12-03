@@ -17,7 +17,8 @@
 
 ##Issues
 - Request family fonts. Reason: Adobe Photoshop CC 2014 is not able to recognize psd family fonts.
-
+- [Font-Awesome](http://fortawesome.github.io/Font-Awesome/icons/): Apparently, Adblock Plus can remove Font Awesome brand icons with their "Remove Social Media Buttons" setting. We will not use hacks to force them to display. Please report an issue with Adblock Plus if you believe this to be an error. To work around this, you'll need to modify the social icon class names.
+ 
 ### Footer 
 Modify: 
 "oxi like us on" => "Κάντε μας like στο " 

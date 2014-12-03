@@ -20,18 +20,32 @@
     border-color: #000000;
 }
 
+#navbar {
+    padding-right: 50px;
+}
+
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #000000;
 }
 
 .navbar-brand {
-    padding: 3px 0px 0px 10px;
+    padding: 3px 0px 0px 40px;
 }
 
-.fa.fa-circle.fa-0x{
+.navbar-brand {
+    height: 100px;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: black;
+}
+
+.fa.fa-circle.fa-0x {
     font-size: .5em;
     padding-right: 40px;
+    padding-left: 10px;
 }
+
 /**
  * Credits to http://stackoverflow.com/a/20667061
 **/
