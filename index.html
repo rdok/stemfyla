@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html class="full" lang="en">
+<html ng-app="stemfylaApp" class="full" lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.75, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.75, user-scalable=no"/>
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title>Fixed Top Navbar Example for Bootstrap</title>
+    <title>Stemfyla</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="app/components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="app/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 
     <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="app/components/components-font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="app/lib/components-font-awesome/css/font-awesome.min.css"/>
 
     <!-- Family Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:100&subset=latin,greek' rel='stylesheet' type='text/css'>
@@ -26,8 +26,8 @@
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-    <script src="app/components/html5shiv/dist/html5shiv.min.js"></script>
-    <script src="app/components/respond/dest/respond.min.js"></script>
+    <script src="app/lib/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="app/lib/respond/dest/respond.min.js"></script>
     <![endif]-->
 </head>
 
@@ -35,85 +35,23 @@
 
 <div class="container-fluid">
 
+    <app-nav-bar></app-nav-bar>
 
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                        aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#"><img src="app/img/logo-stemfyla-250x250.png" alt="Company Logo"
-                                                      height="100"/></a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse pull-right">
-                <ul class="nav navbar-nav">
-                    <li class="active">
-                        <a href="#">
-                            Αρχική
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#about"><i class="fa fa-circle fa-0x"></i>
-                            Υλικό
-                        </a></li>
-                    <li>
-                        <a href="#contact"><i class="fa fa-circle fa-0x"></i>
-                            Κατάλογος
-                        </a></li>
-                    <li><a href="#contact"><i class="fa fa-circle fa-0x"></i>
-                        Επικοινωνία</a></li>
-                </ul>
-            </div>
-            <!--/.nav-collapse -->
-        </div>
-    </nav>
-
+    <app-footer></app-footer>
 </div>
-<!-- /container -->
-
-<footer class="footer">
-    <div class="container">
-
-        <div class="row">
-            <div class="col-lg-4 col-md-5 col-sm-6 col-xs-9 col-xs-push-2">
-                <div class="col-lg-4 col-lg-push-2 col-md-6 col-md-push-4 col-sm-5 col-sm-push-0 col-xs-2 col-xs-pull-3">
-                    <a href='https://www.facebook.com/stemfyla'>
-                        <i class="fa fa-facebook-square fa-3x" id="facebook-id-fontawesome"></i>
-                    </a>
-                </div>
-
-                <div class="footer-social col-lg-8 col-lg-pull-0 col-md-6 col-md-pull-0 col-sm-7 col-sm-pull-6 col-xs-10 col-xs-pull-2">
-                    Κάντε μας like στο:<br/>
-                    Facebook
-                </div>
-
-
-            </div>
-
-            <div class="col-lg-5 col-lg-push-1 col-md-5 col-md-pull-3 col-sm-6 col-sm-push-1 col-xs-3 col-xs-pull-1 pull-right">
-                Επικοινωνία
-            </div>
-
-        </div>
-        <!-- /.row -->
-
-    </div>
-    <!-- /.container -->
-</footer>
-<!-- /footer -->
-
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="app/components/jquery/dist/jquery.min.js"></script>
-<script src="app/components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="app/lib/jquery/dist/jquery.min.js"></script>
+<script src="app/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- AngularJS -->
+<script src="app/lib/angular/angular.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="app/js/ie10-viewport-bug-workaround.js"></script>
+
+<!-- Custom scripts -->
+<script src="app/js/main.js"></script>
 </body>
 </html>
