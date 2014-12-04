@@ -1,8 +1,8 @@
 <!-- Fixed navbar -->
 <nav class="navbar navbar-default" role="navigation">
-    <div class="container-fluid">
-        <div class="container">
-            <div class="navbar-header">
+    <div class="container">
+        <div class="row">
+            <div class="navbar-header col-lg-offset-1">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
                         aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
@@ -10,37 +10,42 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img src="app/img/logo-stemfyla-250x250.png" alt="Company Logo"
-                                                      height="100"/></a>
+                <a class="navbar-brand" href ng-click="panelCtrl.selectTab(1)">
+                    <img src="app/img/logo-stemfyla-250x250.png"
+                         alt="Company Logo"
+                         height="100"/></a>
             </div>
 
-            <div id="navbar" class="navbar-collapse collapse pull-right">
+            <div id="navbar" class="navbar-collapse collapse col-lg-offset-2">
                 <ul class="nav navbar-nav">
-                    <li class="active">
-                        <a href="#">
+                    <li ng-class="{ active: panelCtrl.isSelected(1) }">
+                        <a href ng-click="panelCtrl.selectTab(1)">
                             Αρχική
                         </a>
                     </li>
-                    <li>
-                        <a href="#about"><i class="fa fa-circle fa-0x"></i>
+                    <li ng-class="{ active: panelCtrl.isSelected(2) }">
+                        <a href ng-click="panelCtrl.selectTab(2)"><i class="fa fa-circle fa-0x"></i>
                             Υλικό
                         </a></li>
-                    <li>
-                        <a href="#contact"><i class="fa fa-circle fa-0x"></i>
+                    <li ng-class="{ active: panelCtrl.isSelected(3) }">
+                        <a href ng-click="panelCtrl.selectTab(3)"><i class="fa fa-circle fa-0x"></i>
                             Κατάλογος
                         </a></li>
-                    <li>
-                        <a href="#contact"><i class="fa fa-circle fa-0x"></i>
+                    <li ng-class="{ active: panelCtrl.isSelected(4) }">
+                        <a href ng-click="panelCtrl.selectTab(4)"><i class="fa fa-circle fa-0x"></i>
                             Ζωντανό Πρόγραμμα
                         </a></li>
-                    <li><a href="#contact"><i class="fa fa-circle fa-0x"></i>
-                        Επικοινωνία</a></li>
+                    <li ng-class="{ active: panelCtrl.isSelected(5) }">
+                        <a href ng-click="panelCtrl.selectTab(5)"><i class="fa fa-circle fa-0x"></i>
+                            Επικοινωνία</a></li>
                 </ul>
             </div>
             <!--/.nav-collapse -->
 
         </div>
+
     </div>
+    <!-- /.container -->
 
 </nav>
 <!-- /.navbar navbar-default -->

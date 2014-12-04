@@ -8,7 +8,7 @@
 
 body {
     padding-top: 30px !important;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto' !important;, sans-serif;
     font-weight: 900 !important;
     font-size: 2em !important;
     background: none;
@@ -20,4 +20,9 @@ body {
     font-size: .7em !important;
     font-weight: 900 !important;
     padding-top: 10px;
+}
+
+.panel, .well, .panel-default {
+    background-color: transparent;
+    border-color: transparent;
 }

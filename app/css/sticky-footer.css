@@ -15,12 +15,12 @@ body {
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
-    height: 130px;
+    height: 7em;
     padding-top: 20px;
     background-color: transparent;
     border-top: 1px solid #000000;
-
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    padding-top: 1.5em;
 }
 
 #facebook-id-fontawesome {

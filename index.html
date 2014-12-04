@@ -31,11 +31,15 @@
     <![endif]-->
 </head>
 
-<body>
+<body ng-controller="PanelController as panelCtrl">
 
 <div class="container-fluid">
 
     <app-nav-bar></app-nav-bar>
+
+
+    <app-contact-page ng-show="panelCtrl.isSelected(5)"></app-contact-page>
+
 
     <app-footer></app-footer>
 
@@ -52,7 +56,13 @@
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="app/js/ie10-viewport-bug-workaround.js"></script>
 
+<!-- loadash & angular-google.maps.js -->
+<script src="app/lib/lodash/dist/lodash.min.js"></script>
+<script src="app/lib/angular-google-maps/dist/angular-google-maps.min.js"></script>
+
 <!-- Custom scripts -->
 <script src="app/js/main.js"></script>
+<script src="app/js/google-map.js"></script>
+
 </body>
 </html>
