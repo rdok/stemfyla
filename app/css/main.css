@@ -17,11 +17,7 @@ body {
     min-height: 400px;
 }
 
-.footer-social {
-    font-size: .7em !important;
-    font-weight: 900 !important;
-    padding-top: 10px;
-}
+
 
 .panel, .well, .panel-default {
     background-color: transparent;

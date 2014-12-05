@@ -24,6 +24,7 @@
       - [Collapse to nav bar to mobile like](http://pasteboard.co/)
       - Suggest another idea.
 4. Safari does not render family fonts correctly. This issue will be solved after issue #2 is solved
+
  
 ### Footer 
 Modify: 
