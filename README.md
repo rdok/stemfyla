@@ -16,8 +16,14 @@
 ### Fix UI for Motorola RAZR V3m
 
 ##Issues
-- Request family fonts. Reason: Adobe Photoshop CC 2014 is not able to recognize psd family fonts.
-- [Font-Awesome](http://fortawesome.github.io/Font-Awesome/icons/): Apparently, Adblock Plus can remove Font Awesome brand icons with their "Remove Social Media Buttons" setting. We will not use hacks to force them to display. Please report an issue with Adblock Plus if you believe this to be an error. To work around this, you'll need to modify the social icon class names.
+1. [Font-Awesome](http://fortawesome.github.io/Font-Awesome/icons/): Apparently, Adblock Plus can remove Font Awesome brand icons with their "Remove Social Media Buttons" setting. We will not use hacks to force them to display. Please report an issue with Adblock Plus if you believe this to be an error. To work around this, you'll need to modify the social icon class names.
+2. Provide font family as Adobe Photoshop CC 2014 cannot recognize from psd.
+3. Nav bar cannot fit all options for screen resolutions of width: 768px - 1200px (approximately). Please select on of those options: 
+      - [Align nav bar options to 2 lines](http://pbrd.co/1FYBN15)
+      - [Move nav bar options below logo image](http://pbrd.co/1FYCw2h)
+      - [Collapse to nav bar to mobile like](http://pasteboard.co/)
+      - Suggest another idea.
+4. Safari does not render family fonts correctly. This issue will be solved after issue #2 is solved 
  
 ### Footer 
 Modify: 

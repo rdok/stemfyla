@@ -4,7 +4,7 @@
     border-left: 0px;
     border-right: 0px;
     border-radius: 0px;
-    min-height: 110px;
+    min-height: 120px;
     margin-bottom: 0px;
 }
 
@@ -62,10 +62,41 @@
     color: #000000;
 }
 
+/**
+ * Smartphones
+**/
 @media (max-width: 767px) {
     .navbar-nav > li > a {
         line-height: 20px;
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .fa.fa-circle.fa-0x {
+        font-size: .5em;
+        padding-right: 1em;
+        padding-left: 10px;
+    }
+
+    .nav > li > a {
+        padding-left: 0em;
+        padding-right: .6em;
+    }
+
+    .navbar-nav > li > a {
+        line-height: 2.5em;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .nav > li > a {
+        padding-left: 0em;
+        padding-right: .6em;
+    }
+
+    .navbar-nav > li > a {
+        line-height: 4.5em;
     }
 }

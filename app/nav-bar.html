@@ -2,7 +2,7 @@
 <nav class="navbar navbar-default" role="navigation">
     <div class="container">
         <div class="row">
-            <div class="navbar-header col-lg-offset-1">
+            <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
                         aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
@@ -16,7 +16,7 @@
                          height="100"/></a>
             </div>
 
-            <div id="navbar" class="navbar-collapse collapse col-lg-offset-2">
+            <div id="navbar" class="navbar-collapse collapse pull-left">
                 <ul class="nav navbar-nav">
                     <li ng-class="{ active: panelCtrl.isSelected(1) }">
                         <a href ng-click="panelCtrl.selectTab(1)">
@@ -41,7 +41,6 @@
                 </ul>
             </div>
             <!--/.nav-collapse -->
-
         </div>
 
     </div>
