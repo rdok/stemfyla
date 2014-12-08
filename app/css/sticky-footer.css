@@ -22,10 +22,6 @@ body {
     padding-top: 1em;
 }
 
-#facebook-id-fontawesome {
-    color: #3a5795;
-}
-
 #content {
     margin-bottom: 1em;
 }
@@ -41,4 +37,27 @@ body {
     font-size: .7em !important;
     font-weight: 900 !important;
     padding-top: 10px;
+}
+
+.zocial.icon.facebook {
+    max-width: 2.1em;
+    border-radius: .0em;
+    border: 0px solid #777;
+    padding-right: .3em;
+}
+
+.zocial.icon.facebook:before {
+    width: 1.6em;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .social-message {
+        padding-left: 2.3em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .social-message {
+        padding-left: 1.7em;
+    }
 }
