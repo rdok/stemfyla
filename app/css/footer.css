@@ -57,9 +57,9 @@ body {
 /**
  * Smartphones
 **/
-@media (max-width: 299px) {
+@media (max-width: 319px) {
     .col-xs-push-1 {
-        left: 0;
+        left: 0 !important;
     }
 
     .social-message {
@@ -67,7 +67,7 @@ body {
     }
 
     .col-xs-pull-2 {
-        right: 27%;
+        right: 27% !important;;
     }
 }
 
