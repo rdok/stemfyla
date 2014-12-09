@@ -50,19 +50,39 @@ body {
     width: 1.6em;
 }
 
+#facebook-logo {
+    padding-left: 0em;
+}
+
+/**
+ * Smartphones
+**/
+@media (max-width: 767px) {
+    .social-message {
+        padding-left: 2.6em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .social-message {
+        padding-left: 0.7em;
+    }
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
     .social-message {
         padding-left: 2.3em;
     }
 }
 
+
 @media (min-width: 1200px) {
     .social-message {
-        padding-left: 1.7em;
+        padding-left: .3em !important;
     }
 }
 
-#footer-copyright{
+#footer-copyright {
     margin-top: 1em;
     margin-bottom: 1em;
     border-top: 1px solid #000000;
