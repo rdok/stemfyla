@@ -54,8 +54,6 @@ body {
     padding-left: 0em;
 }
 
-
-
 /**
  * Smartphones
 **/
@@ -84,8 +82,9 @@ body {
 }
 
 #footer-copyright {
-    margin-top: 1em;
+    margin-top: 1.3em;
     margin-bottom: 1em;
+    padding-top: .3em;
     border-top: 1px solid #000000;
     font-size: .6em;
 

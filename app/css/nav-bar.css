@@ -39,7 +39,7 @@
 }
 
 .fa.fa-circle.fa-0x {
-    font-size: .5em;
+    font-size: .6em;
     padding-right: 40px;
     padding-left: 10px;
 }
@@ -86,17 +86,30 @@
     }
 
     .navbar-nav > li > a {
-        line-height: 2.5em;
+        line-height: 5.5em;
     }
+
+    .fa.fa-circle.fa-0x {
+        font-size: .3em;
+        padding-right: .0em;
+        padding-left: 0.7em;
+    }
+
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1199px) {
     .nav > li > a {
         padding-left: 0em;
         padding-right: .6em;
     }
 
     .navbar-nav > li > a {
-        line-height: 4.5em;
+        line-height: 5.5em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .nav.navbar-nav {
+        margin-left: 4em;
     }
 }
