@@ -54,6 +54,8 @@ body {
     padding-left: 0em;
 }
 
+
+
 /**
  * Smartphones
 **/
@@ -74,7 +76,6 @@ body {
         padding-left: 2.3em;
     }
 }
-
 
 @media (min-width: 1200px) {
     .social-message {
