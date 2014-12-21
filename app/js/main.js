@@ -59,6 +59,13 @@
         };
     });
 
+    app.directive('appCatalogPage', function () {
+        return {
+            restrict: 'E',
+            templateUrl: 'app/catalog.html'
+        };
+    });
+
     app.directive('appFooter', function () {
         return {
             restrict: 'E',
