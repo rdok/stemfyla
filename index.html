@@ -14,17 +14,12 @@
     <!-- Bootstrap core CSS -->
     <link href="app/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 
-    <!-- Social samcollins/css-social-buttons -->
-    <link rel="stylesheet" type="text/css" href="app/lib/samcollins-css-social-buttons/css/zocial.css"/>
-
-
     <!-- Font Awesome CSS -->
     <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" media="all"
           rel="stylesheet" type="text/css">
 
-
-    <!-- Family Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto:100&subset=latin,greek' rel='stylesheet' type='text/css'>
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="app/lib/magnific-popup/dist/magnific-popup.css">
 
     <!-- Custom styles -->
     <link href="app/css/nav-bar.css" rel="stylesheet">
@@ -42,7 +37,9 @@
 
 <div class="container-fluid" id="content">
 
-    <app-nav-bar></app-nav-bar>
+    <app-nav-bar id="navbar"></app-nav-bar>
+
+    <app-material-page ng-show="panelCtrl.isSelected(2)"></app-material-page>
 
     <app-catalog-page ng-show="panelCtrl.isSelected(3)"></app-catalog-page>
 
@@ -59,6 +56,9 @@
 <script src="app/lib/jquery/dist/jquery.min.js"></script>
 <script src="app/lib/bootstrap/dist/js/bootstrap.min.js"></script>
 
+<!-- Magnific Popup core JS file -->
+<script src="app/lib/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+
 <!-- AngularJS -->
 <script src="app/lib/angular/angular.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -66,11 +66,10 @@
 
 <!-- loadash & angular-google.maps.js -->
 <script src="app/lib/lodash/dist/lodash.min.js"></script>
-<script src="app/lib/angular-google-maps/dist/angular-google-maps.min.js"></script>
 
 <!-- Custom scripts -->
 <script src="app/js/main.js"></script>
-<script src="app/js/google-map.js"></script>
+
 
 </body>
 </html>

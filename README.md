@@ -8,26 +8,9 @@
 
 ***
  
-## TODO
-### Convert PSD to website - done
-### Nav Bar - done
-- Αρχική, Υλικό, Κατάλογος, Ζωντανό Πρόγραμμα, Επικοινωνία 
+## Material Section
+ Use [ihover](http://gudh.github.io/ihover/dist/) if descriptions are provided
 
-### Fix UI for Motorola RAZR V3m
-
-##Issues
-3. Nav bar cannot fit all options for screen resolutions of width: 768px - 1200px (approximately). Please select on of those options: 
-      - [Align nav bar options to 2 lines](http://pbrd.co/1FYBN15)
-      - [Move nav bar options below logo image](http://pbrd.co/1FYCw2h)
-      - [Collapse to nav bar to mobile like](http://pasteboard.co/)
-      - Suggest another idea.
-4. Safari does not render family fonts correctly. This issue will be solved after issue #2 is solved
-
- 
-### Footer 
-Modify: 
-"oxi like us on" => "Κάντε μας like στο " 
- 
 ***
 
 ## Installation
@@ -37,6 +20,10 @@ Modify:
 	- Your bitbucket username/password will be asked. If you prefer to not input these credentials each time you push/pull then you can [Set up SSH for Git](https://confluence.atlassian.com/display/BITBUCKET/Set+up+SSH+for+Git)
 	- All files are now downloaded.
 ***
+
+## Plugins
+- [Magnific-Popup](https://github.com/dimsemenov/Magnific-Popup) Fast, light and responsive lightbox plugin, for jQuery and Zepto.js.
+                                                                 
 
 ##Tools
 - [bower](http://bower.io/) Web sites are made of lots of things — frameworks, libraries, assets, utilities, and rainbows. Bower manages all these things for you.
