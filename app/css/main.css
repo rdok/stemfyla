@@ -84,3 +84,8 @@ body {
     background-color: transparent;
     border: 0px;
 }
+
+a {
+    color: #5F021F;
+    text-decoration: none;
+}
