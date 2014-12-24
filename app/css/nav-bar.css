@@ -111,6 +111,7 @@
 
 @media (min-width: 1200px) {
     .nav.navbar-nav {
-        margin-left: 4em;
+        margin-left: .5em;
     }
+
 }
