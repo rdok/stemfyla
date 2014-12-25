@@ -39,16 +39,6 @@
     <script src="app/lib/respond/dest/respond.min.js"></script>
     <![endif]-->
 
-
-
-    <!-- style css  -->
-    <!--<style>-->
-        <!--html, body {-->
-            <!--margin: 0;-->
-            <!--padding: 0;-->
-            <!--overflow: auto !important;-->
-        <!--}-->
-    <!--</style>-->
 </head>
 
 <body ng-controller="PanelController as panelCtrl">
@@ -61,9 +51,7 @@
         <app-material-page ng-show="panelCtrl.isSelected(2)"></app-material-page>
     </div>
 
-    <div class="container">
-        <app-catalog-page ng-show="panelCtrl.isSelected(3)"></app-catalog-page>
-    </div>
+    <app-catalog-page ng-show="panelCtrl.isSelected(3)"></app-catalog-page>
 
     <div class="container">
         <app-contact-page ng-show="panelCtrl.isSelected(5)"></app-contact-page>

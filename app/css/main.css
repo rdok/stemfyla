@@ -89,3 +89,14 @@ a {
     color: #5F021F;
     text-decoration: none;
 }
+
+
+#fb5 #fb5-about h1, #fb5 #fb5-about h2, #fb5 #fb5-about h3, #fb5 #fb5-about h4, #fb5 #fb5-about h5, #fb5 #fb5-about h6 {
+    color: #000;
+}
+
+#fb5 #fb5-about p, #fb5 #fb5-about li {
+    color: black;
+    font-family: PFUniversal-Light;
+    font-size: 1.5em;
+}

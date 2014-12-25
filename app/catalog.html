@@ -1,4 +1,3 @@
-
 <script src="app/js/catalog/jquery.js"></script>
 <script src="app/js/catalog/turn.js"></script>
 <script src="app/js/catalog/jquery.fullscreen.js"></script>
@@ -49,8 +48,7 @@
             <section id="fb5-deeplinking">
                 <ul>
                     <li data-address="page1" data-page="1"></li>
-                    <li data-address="page2-page3" data-page="2"></li>
-                    <li data-address="page2-page3" data-page="3"></li>
+                    <li data-address="page2-3" data-page="2"></li>
                     <li data-address="page4-5" data-page="4"></li>
                     <li data-address="page4-5" data-page="5"></li>
                     <li data-address="page6-page7" data-page="6"></li>
@@ -67,35 +65,24 @@
 
             <!-- BEGIN ABOUT -->
             <section id="fb5-about">
-                <h3>How to read a book?</h3>
+                <h3>Ποτά</h3>
 
-                <p>Nulla congue pulvinar pharetra. Cras sed malesuada arcu. Duis eleifend nunc laoreet odio dapibus
-                    ac convallis sapien ornare. Nullam a est id diam elementum rhoncus.Ad dicam diceret pri. Cu
-                    animal eligendi eam, nam ea alia oratio constituam, ad elit dolore possim est. Usu in nostro
-                    delectus, ne definitionem delicatissimi has. Cu sea iriure vivendum dignissim, choro nonumy
-                    philosophia ex mea. In usu reque liber fabellas, omnes omittam te per, ei novum percipitur cum.
-                    An eum erat facer, persius delectus ei vis.</p>
+                <p>Όλα τα ποτά σερβίρονται με μεζέδες χωρίς χρέωση ωστόσο θα σας ανοίξουν την όρεξη για τα κυρίως πιάτα
+                    που περιλαμβάνει ο κατάλογος τα οποία βγαίνουν πάντα φρεσκομαγειρεμένα.</p>
 
                 <p>&nbsp;</p>
 
-                <h3>Short description</h3>
+                <h3>Συνταγές</h3>
 
-                <p>Nulla congue pulvinar pharetra. Cras sed malesuada arcu. Duis eleifend nunc laoreet odio dapibus
-                    ac convallis sapien ornare. Nullam a est id diam elementum rhoncus.Te amet disputando vel. Cu
-                    vim persius consequat consetetur, eam id melius fuisset principes. Clita habemus et vix, ius
-                    doming philosophia et. Eos mutat luptatum ad. Ad iudico repudiandae nec, mel an tempor accusata
-                    eloquentiam, choro forensibus et eam.</p>
+                <p> Οι δε συνταγές είναι δικές μας και όλες περιλαμβάνουν φρέσκα υλικά ενώ καθεμία από αυτές έχει ένα
+                    μυστικό συστατικό το οποίο στον κατάλογο μένει κρυφό.</p>
 
                 <p>&nbsp;</p>
 
-                <h3>Start reading!</h3>
+                <h3>Πρόταση</h3>
 
-                <p>Nulla congue pulvinar pharetra. Cras sed malesuada arcu. Duis eleifend nunc laoreet odio dapibus
-                    ac convallis sapien ornare. Nullam a est id diam elementum <a
-                            href="javascript:setPage(2)">rhoncus</a>.Te
-                    amet disputando vel. Cu vim persius consequat consetetur, eam id melius fuisset principes. Clita
-                    habemus et vix, ius doming philosophia et. Eos mutat luptatum ad. Ad iudico repudiandae nec, mel
-                    an tempor accusata eloquentiam, choro forensibus et eam.</p>
+                <p>Ο Ευθύμης Καναβός, ο υπεύθυνος στο Stemfyla, προτείνει μεσογειακό ριζότο με τοματίνια, λιαστή
+                    ντομάτα, φέτα, θυμάρι και φρέσκια ρίγανη, μοσχαράκι με γλυκό τραχανά και σουτζουκάκια.</p>
 
                 <p>&nbsp;</p>
             </section>
@@ -117,14 +104,18 @@
                             <div id="fb5-cover">
                                 <ul>
                                     <li><a href="javascript:setPage(2)"><img
-                                            data-src="app/img/catalog/UI/cover-photo1.jpg"></a>
-                                    </li>
+                                            data-src="app/img/catalog/pages/cover-photo1.jpg"></a></li>
                                     <li><a href="javascript:youtube('zWzRrqEvfPU','560','315')"><img
-                                            data-src="app/img/catalog/UI/cover-photo2.jpg"></a></li>
+                                            data-src="app/img/catalog/pages/cover-photo2.jpg"></a></li>
                                     <li><a href="javascript:youtube('48I0IHmsuOE','560','315')"><img
-                                            data-src="app/img/catalog/UI/cover-photo3.jpg"></a></li>
+                                            data-src="app/img/catalog/pages/cover-photo5.jpg"></a></li>
+                                    <li><a href="javascript:youtube('48I0IHmsuOE','560','315')"><img
+                                            data-src="app/img/catalog/pages/cover-photo4.jpg"></a></li>
+                                    <li><a href="javascript:youtube('48I0IHmsuOE','560','315')"><img
+                                            data-src="app/img/catalog/pages/cover-photo3.jpg"></a></li>
+
                                 </ul>
-                                <img data-src="app/img/catalog/UI/logo-on-book.png" id="fb5-logo-cover">
+                                <img data-src="app/img/logos/logo-stemfyla-250x250.png" id="fb5-logo-cover">
                             </div>
                         </div>
                         <!-- end description for page  -->
@@ -142,351 +133,166 @@
                 <!-- END PAGE 1 -->
 
 
-                <!-- BEGIN PAGE 2-->
-                <div data-background-image="" class="">
-
-                    <!-- begin container page book -->
+                <!-- BEGIN PAGE 2 -->
+                <div data-background-image="app/img/catalog/pages/2_3.jpg" class="fb5-double fb5-first">
+                    <!-- container page book -->
                     <div class="fb5-cont-page-book">
-
                         <!-- description for page from WYSWIG -->
-                        <div class="fb5-page-book">
-                            <h1>Title Page</h1>
-
-                            <p>Lorem ipsum dolor sit amet, et pro sumo abhorreant definiebas. In mea assum ignota,
-                                duo id vero laudem, mel tantas epicuri cotidieque et. Malis choro solet cu nam.
-                                Magna option menandri ei usu. Nonumy luptatum et nec.</p>
-
-                            <h3>Table of Contents:</h3>
-                            <ul>
-                                <li><a href="javascript:setPage(1)">Nec ex paulo tollit</a></li>
-                                <li><a href="javascript:setPage(4)">Posse nulla cu eam</a></li>
-                                <li><a href="javascript:setPage(6)">Mea quaeque accusamus</a></li>
-                                <li><a href="javascript:setPage(9)">Vidit electram ex usu</a></li>
-                                <li><a href="javascript:setPage(10)">Detracto reformidans ius in</a></li>
-                                <li><a href="javascript:setPage(1)">Porro posidonium</a></li>
-                            </ul>
-                            <h3>Normal list:</h3>
-                            <ul>
-                                <li>Nec ex paulo tollit</li>
-                                <li>Nso atomorum assentior</li>
-                            </ul>
-                            <p>Nec ex paulo tollit, <a href="javascript:youtube('bgEaCWmbQdI','560','315')">youtube
-                                video</a>. Iuvaret ornatus sed ei, vim in sumo probo quaestio. Sed soleat maiestatis
-                                ne, te mel solet soluta maiestatis. Vix no labore graecis.</p>
-
-                            <p><a href="javascript:youtube('oJXpmlhqWzU','560','315')"><img width="130" height="130"
-                                                                                            src="app/img/catalog/UI/cover-photo1.jpg"
-                                                                                            alt="cover-photo1"
-                                                                                            class="wp-image-59 alignleft"></a>
-                                Nostrud probatus ea mea, te homero possit suscipit qui, no atomorum assentior nec.
-                                Iuvaret ornatus sed ei, vim in sumo probo quaestio. Te homero possit suscipit qui,
-                                no atomorum assentior nec. Lorem ipsum dolor sit amet, et pro sumo abhorreant
-                                definiebas.Nostrud probatus ea mea, te homero possit suscipit qui, no atomorum
-                                assentior nec. Iuvaret ornatus sed ei, vim in.</p>
-
-                        </div>
-
+                        <div class="fb5-page-book"></div>
                         <!-- number page and title for page -->
                         <div class="fb5-meta">
                             <span class="fb5-num">2</span>
-                            <span class="fb5-description">Collection 2014</span>
+                            <span class="fb5-description">Κατάλογος 2014</span>
                         </div>
-                        <!-- END number page and title for page -->
-
-
                     </div>
                     <!-- end container page book -->
-
                 </div>
                 <!-- END PAGE 2 -->
 
-
                 <!-- BEGIN PAGE 3 -->
-                <div data-background-image="app/img/catalog/pages/3.jpg" class="">
-
+                <div data-background-image="app/img/catalog/pages/2_3.jpg" class="fb5-double fb5-second">
                     <!-- container page book -->
                     <div class="fb5-cont-page-book">
-
-                        <!-- description for page -->
-                        <div class="fb5-page-book">
-
-                        </div>
-
-                        <!-- number page and title  -->
+                        <!-- description for page from WYSWIG -->
+                        <div class="fb5-page-book"></div>
+                        <!-- number page and title for page -->
                         <div class="fb5-meta">
-                            <span class="fb5-description">Collection 2014</span>
                             <span class="fb5-num">3</span>
+                            <span class="fb5-description">Κατάλογος 2014</span>
                         </div>
-
-
                     </div>
                     <!-- end container page book -->
-
                 </div>
                 <!-- END PAGE 3 -->
 
 
                 <!-- BEGIN PAGE 4 -->
                 <div data-background-image="app/img/catalog/pages/4_5.jpg" class="fb5-double fb5-first">
-
                     <!-- container page book -->
                     <div class="fb5-cont-page-book">
-
                         <!-- description for page from WYSWIG -->
-                        <div class="fb5-page-book">
-
-                        </div>
-
+                        <div class="fb5-page-book"></div>
                         <!-- number page and title for page -->
                         <div class="fb5-meta">
                             <span class="fb5-num">4</span>
-                            <span class="fb5-description">Collection 2014</span>
+                            <span class="fb5-description">Κατάλογος 2014</span>
                         </div>
-
-
                     </div>
                     <!-- end container page book -->
-
                 </div>
                 <!-- END PAGE 4 -->
 
-
                 <!-- BEGIN PAGE 5 -->
                 <div data-background-image="app/img/catalog/pages/4_5.jpg" class="fb5-double fb5-second">
-
                     <!-- container page book -->
                     <div class="fb5-cont-page-book">
-
                         <!-- description for page from WYSWIG -->
-                        <div class="fb5-page-book">
-
-                        </div>
-
+                        <div class="fb5-page-book"></div>
                         <!-- number page and title for page -->
                         <div class="fb5-meta">
-                            <span class="fb5-description">Collection 2014</span>
+                            <span class="fb5-description">Κατάλογος 2014</span>
                             <span class="fb5-num">5</span>
                         </div>
-
                     </div>
                     <!-- end container page book -->
-
                 </div>
                 <!-- END PAGE 5 -->
 
-
                 <!-- BEGIN PAGE 6 -->
-                <div data-background-image="app/img/catalog/pages/6.jpg" class="">
-
+                <div data-background-image="app/img/catalog/pages/6_7.jpg" class="fb5-double fb5-first">
                     <!-- container page book -->
                     <div class="fb5-cont-page-book">
-
                         <!-- description for page from WYSWIG -->
-                        <div class="fb5-page-book">
-
-                        </div>
-
+                        <div class="fb5-page-book"></div>
                         <!-- number page and title for page -->
                         <div class="fb5-meta">
+                            <span class="fb5-description">Κατάλογος 2014</span>
                             <span class="fb5-num">6</span>
-                            <span class="fb5-description">Collection 2014</span>
                         </div>
-
                     </div>
                     <!-- end container page book -->
-
                 </div>
                 <!-- END PAGE 6 -->
 
-
                 <!-- BEGIN PAGE 7 -->
-                <div data-background-image="" class="">
-
+                <div data-background-image="app/img/catalog/pages/6_7.jpg" class="fb5-double fb5-second">
                     <!-- container page book -->
                     <div class="fb5-cont-page-book">
-
                         <!-- description for page from WYSWIG -->
-                        <div class="fb5-page-book">
-                            <h1>Heading 1</h1>
-
-                            <p>Usu at nominavi partiendo aliquando. Sit eu sumo tempor scribentur. Everti latine eu
-                                mei, no vis posse mazim oblique, liber delectus dissentiunt sit ex. Ea vix graeco
-                                saperet gubergren, facete antiopam ei his. Eos ad utamur definitionem.</p>
-
-                            <h2>Heading 2</h2>
-
-                            <p>Per ex dicat utroque. Ex erat audiam vivendo mei, his vide duis forensibus at, malis
-                                omnes vocibus pro ne. Ei alterum dolores electram nec.</p>
-
-                            <h3>Heading 3</h3>
-
-                            <p>Nam habemus argumentum ad. Te nam soluta conceptam, at per dictas laoreet constituto.
-                                Te nam dicam adipiscing, ne has denique moderatius.</p>
-                            <h4>Heading 4</h4>
-
-                            <p>Eleifend honestatis cotidieque sed ne. Pri id paulo audire urbanitas, cu erat veniam
-                                consul sit. Quo at nihil dicunt animal, tation inciderint philosophia vim ei. Movet
-                                laudem mentitum id mel.</p>
-                            <h5>Heading 5</h5>
-
-                            <p>Eam nobis solet singulis id. At eam idque scribentur. Has ad detraxit
-                                vituperatoribus, invidunt evertitur consectetuer vel no. Quo id dolorum partiendo
-                                assentior, inani prompta vis eu.</p>
-                            <h6>Heading 6</h6>
-
-                            <p>Et molestiae vituperata mei, numquam corpora sapientem at his. Iudico eirmod
-                                referrentur duo ex, no sed soleat petentium honestatis. Cu mel melius laboramus, sit
-                                stet omnis mollis cu, regione labitur at usu.</p>
-                        </div>
-
+                        <div class="fb5-page-book"></div>
                         <!-- number page and title for page -->
                         <div class="fb5-meta">
-                            <span class="fb5-description">Collection 2014</span>
+                            <span class="fb5-description">Κατάλογος 2014</span>
                             <span class="fb5-num">7</span>
                         </div>
-
-
                     </div>
                     <!-- end container page book -->
-
                 </div>
-                <!-- END PAGE 7-->
-
+                <!-- END PAGE 7 -->
 
                 <!-- BEGIN PAGE 8 -->
-                <div data-background-image="" class="">
-
+                <div data-background-image="app/img/catalog/pages/8_9.jpg" class="fb5-double fb5-first">
                     <!-- container page book -->
                     <div class="fb5-cont-page-book">
-
-                        <!-- description for page  -->
-                        <div class="fb5-page-book">
-                            <h4></h4>
-                            <h4>Te graeco nonumes</h4>
-
-                            <p><a href="javascript:youtube('oJXpmlhqWzU','560','315')"><img width="130" height="130"
-                                                                                            src="app/img/catalog/UI/cover-photo3.jpg"
-                                                                                            alt="cover-photo3"
-                                                                                            class="alignleft size-full wp-image-61"></a>Malorum
-                                blandit reprimique, torquatos complectitur usu ex. Feugiat erroribus te eos. Ea eum
-                                tota rationibus instructior. Te eos suas scripta comprehensam.Modus decore commune
-                                nam at. Sed ea scripta principes, has vocibus aliquando reformidans ne. Sale iuvaret
-                                ad per. Assum diceret te pri, cum quod lorem oratio no. Nonumy volutpat similique
-                                qui ei, ad tollit dolores invidunt pri, no vix duis volumus voluptaria. Pri reque
-                                homero pertinacia in, sea te scripserit liberavisse.Lorem ipsum dolor sit amet, quo
-                                ex tamquam quaerendum persequeris, et vel aliquam sadipscing, no ipsum facilis nam.
-                                Appellantur dissentiunt cum in. Dicta albucius dignissim cu ius.</p>
-                            <h4>Te graeco nonumes</h4>
-
-                            <p><a href="javascript:youtube('48I0IHmsuOE','560','315')"><img width="130" height="130"
-                                                                                            src="app/img/catalog/UI/cover-photo2.jpg"
-                                                                                            alt="cover-photo2"
-                                                                                            class="size-full wp-image-60 alignright"></a>Eu
-                                usu aperiam euripidis, ut vix iusto ocurreret principes. Timeam mandamus pro ut,
-                                agam illud cu cum, mei assum semper rationibus in. Ridens facete regione pro an.
-                                Laudem reprimique an his, et oratio hendrerit eos, est oratio ullamcorper
-                                voluptatibus in. Ut sea assum eirmod explicari. Mel <a href="javascript:setPage(1)">melius
-                                    legimus</a> id, et nam error laudem atomorum.Cu semper accommodare ius.</p>
-
-                            <p><strong>Eam ut facilisi dissentiunt.</strong></p>
-
-                            <p><strong></strong> Appellantur dissentiunt cum in. Dicta albucius dignissim cu ius.
-                                Per eu autem graeco, vide minim persequeris his in, solum rebum ipsum in sed.Ei eum
-                                possim prompta, purto fabellas mei ad. Ex sed veri idque facilis. Facer intellegam
-                                reprehendunt vim no, sit id aperiam bonorum. Aeque populo disputationi ut pri, no
-                                harum fabulas cum, eu solet propriae mei.</p>
-
-                            <p>&nbsp;</p>
-
-                            <p>&nbsp;</p>
-                        </div>
-                        <!-- end description for page  -->
-
+                        <!-- description for page from WYSWIG -->
+                        <div class="fb5-page-book"></div>
                         <!-- number page and title for page -->
                         <div class="fb5-meta">
+                            <span class="fb5-description">Κατάλογος 2014</span>
                             <span class="fb5-num">8</span>
-                            <span class="fb5-description">Collection 2014</span>
                         </div>
-
-
                     </div>
                     <!-- end container page book -->
-
                 </div>
                 <!-- END PAGE 8 -->
 
-
                 <!-- BEGIN PAGE 9 -->
-                <div data-background-image="app/img/catalog/pages/9.jpg" class="">
-
+                <div data-background-image="app/img/catalog/pages/8_9.jpg" class="fb5-double fb5-second">
                     <!-- container page book -->
                     <div class="fb5-cont-page-book">
-
                         <!-- description for page from WYSWIG -->
-                        <div class="fb5-page-book">
-
-                        </div>
-
+                        <div class="fb5-page-book"></div>
                         <!-- number page and title for page -->
                         <div class="fb5-meta">
-                            <span class="fb5-description">Collection 2014</span>
+                            <span class="fb5-description">Κατάλογος 2014</span>
                             <span class="fb5-num">9</span>
                         </div>
-
                     </div>
                     <!-- end container page book -->
-
                 </div>
                 <!-- END PAGE 9 -->
 
-
                 <!-- BEGIN PAGE 10 -->
                 <div data-background-image="app/img/catalog/pages/10_11.jpg" class="fb5-double fb5-first">
-
                     <!-- container page book -->
                     <div class="fb5-cont-page-book">
-
                         <!-- description for page from WYSWIG -->
-                        <div class="fb5-page-book">
-
-                        </div>
-
+                        <div class="fb5-page-book"></div>
                         <!-- number page and title for page -->
                         <div class="fb5-meta">
+                            <span class="fb5-description">Κατάλογος 2014</span>
                             <span class="fb5-num">10</span>
-                            <span class="fb5-description">Collection 2014</span>
                         </div>
-
                     </div>
                     <!-- end container page book -->
-
                 </div>
-                <!-- END PAGE 10 -->
-
+                <!-- END PAGE 9 -->
 
                 <!-- BEGIN PAGE 11 -->
                 <div data-background-image="app/img/catalog/pages/10_11.jpg" class="fb5-double fb5-second">
-
                     <!-- container page book -->
                     <div class="fb5-cont-page-book">
-
                         <!-- description for page from WYSWIG -->
-                        <div class="fb5-page-book">
-
-                        </div>
-
+                        <div class="fb5-page-book"></div>
                         <!-- number page and title for page -->
                         <div class="fb5-meta">
-                            <span class="fb5-description">Collection 2014</span>
+                            <span class="fb5-description">Κατάλογος 2014</span>
                             <span class="fb5-num">11</span>
                         </div>
-
                     </div>
                     <!-- end container page book -->
-
                 </div>
-                <!-- END PAGE 11 -->
-
+                <!-- END PAGE 10 -->
 
                 <!-- BEGIN PAGE 12 -->
                 <div data-background-image="app/img/catalog/pages/12.jpg" class="">
@@ -510,7 +316,6 @@
                 </div>
                 <!-- END PAGE 12 -->
 
-
             </div>
             <!-- END BOOK -->
 
@@ -529,50 +334,46 @@
 
             <div class="fb5-bcg-tools"></div>
 
-            <a id="fb5-logo" target="_blank" href="http://codecanyon.net/user/flashmaniac?ref=flashmaniac">
-                <img alt="" src="app/img/catalog/UI/logo.png">
-            </a>
-
             <div class="fb5-menu" id="fb5-center">
                 <ul>
 
                     <!-- icon download -->
                     <li>
-                        <a title="DOWNLOAD (ZIP)  " class="fb5-download" href="app/img/catalog/UI/file.pdf"></a>
+                        <a title="Λήψη (PDF)  " class="fb5-download" href="app/img/catalog/UI/file.pdf"></a>
                     </li>
 
 
                     <!-- icon_zoom_in -->
                     <li>
-                        <a title="ZOOM IN" class="fb5-zoom-in"></a>
+                        <a title="Μεγέθυνση" class="fb5-zoom-in"></a>
                     </li>
 
                     <!-- icon_zoom_out -->
 
                     <li>
-                        <a title="ZOOM OUT " class="fb5-zoom-out"></a>
+                        <a title="Σμίκρυνση " class="fb5-zoom-out"></a>
                     </li>
 
                     <!-- icon_zoom_auto -->
                     <li>
-                        <a title="ZOOM AUTO " class="fb5-zoom-auto"></a>
+                        <a title="Αυτόματη μεγέθυνση " class="fb5-zoom-auto"></a>
                     </li>
 
                     <!-- icon_zoom_original -->
                     <li>
-                        <a title="ZOOM ORIGINAL (SCALE 1:1)" class="fb5-zoom-original"></a>
+                        <a title="Αρχική μεγεθυνσή (κλίμακα 1:1)" class="fb5-zoom-original"></a>
                     </li>
 
 
                     <!-- icon_allpages -->
                     <li>
-                        <a title="SHOW ALL PAGES " class="fb5-show-all"></a>
+                        <a title="Εμφάνιση όλων των σελίδων " class="fb5-show-all"></a>
                     </li>
 
 
                     <!-- icon_home -->
                     <li>
-                        <a title="SHOW HOME PAGE " class="fb5-home"></a>
+                        <a title="Αρχική σελίδα " class="fb5-home"></a>
                     </li>
 
                 </ul>
@@ -582,19 +383,14 @@
                 <ul>
                     <!-- icon page manager -->
                     <li class="fb5-goto">
-                        <label for="fb5-page-number" id="fb5-label-page-number">PAGE</label>
+                        <label for="fb5-page-number" id="fb5-label-page-number">Σελίδα</label>
                         <input type="text" id="fb5-page-number">
-                        <button type="button">GO</button>
-                    </li>
-
-                    <!-- icon contact form -->
-                    <li>
-                        <a title="SEND MESSAGE" class="contact"></a>
+                        <button type="button">Βρες</button>
                     </li>
 
                     <!-- icon fullscreen -->
                     <li>
-                        <a title="FULL / NORMAL SCREEN" class="fb5-fullscreen"></a>
+                        <a title="Πλήρες / Κανονική οθόνη" class="fb5-fullscreen"></a>
                     </li>
 
                 </ul>
@@ -658,11 +454,7 @@
                         </li>
 
                         <li class="2">
-                            <img alt="" data-src="app/img/catalog/pages/thumbs/2_.jpg">
-                        </li>
-
-                        <li class="3">
-                            <img alt="" data-src="app/img/catalog/pages/thumbs/3_.jpg">
+                            <img alt="" data-src="app/img/catalog/pages/thumbs/2_3_.jpg">
                         </li>
 
                         <li class="4">
@@ -670,19 +462,11 @@
                         </li>
 
                         <li class="6">
-                            <img alt="" data-src="app/img/catalog/pages/thumbs/6_.jpg">
-                        </li>
-
-                        <li class="7">
-                            <img alt="" data-src="app/img/catalog/pages/thumbs/7_.jpg">
+                            <img alt="" data-src="app/img/catalog/pages/thumbs/6_7_.jpg">
                         </li>
 
                         <li class="8">
-                            <img alt="" data-src="app/img/catalog/pages/thumbs/8_.jpg">
-                        </li>
-
-                        <li class="9">
-                            <img alt="" data-src="app/img/catalog/pages/thumbs/9_.jpg">
+                            <img alt="" data-src="app/img/catalog/pages/thumbs/8_9_.jpg">
                         </li>
 
                         <li class="10">
@@ -702,10 +486,8 @@
         </div>
         <!-- END ALL PAGES -->
 
-
     </div>
     <!-- END HTML BOOK -->
-
 
     <!-- CONFIGURATION FLIPBOOK -->
     <script>
@@ -720,9 +502,9 @@
                     "tooltip_visible": "true",
                     "toolbar_visible": "true",
                     "gotopage_width": "30",
-                    "deeplinking_enabled": "true",
+                    "deeplinking_enabled": "false",
                     "rtl": "false",
-                    'full_area': 'false',
+                    'full_area': 'true',
                     'lazy_loading_thumbs': 'false',
                     'lazy_loading_pages': 'false'
                 })
