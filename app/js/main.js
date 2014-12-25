@@ -29,28 +29,28 @@
     app.directive('appNavBar', function () {
         return {
             restrict: 'E',
-            templateUrl: 'app/nav-bar.html'
+            templateUrl: 'partials/nav-bar.html'
         };
     });
 
     app.directive('appMaterialPage', function () {
         return {
             restrict: 'E',
-            templateUrl: 'app/material.html'
+            templateUrl: 'pages/material.html'
         };
     });
 
     app.directive('appCatalogPage', function () {
         return {
             restrict: 'E',
-            templateUrl: 'app/catalog.html'
+            templateUrl: 'pages/catalog.html'
         };
     });
 
     app.directive('appContactPage', function () {
         return {
             restrict: 'E',
-            templateUrl: 'app/contact.html'
+            templateUrl: 'pages/contact.html'
         };
     });
 
@@ -58,7 +58,7 @@
     app.directive('appFooter', function () {
         return {
             restrict: 'E',
-            templateUrl: 'app/footer.html'
+            templateUrl: 'partials/footer.html'
         };
     });
 
