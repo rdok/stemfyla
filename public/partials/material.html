@@ -1,0 +1,100 @@
+<div class="row popup-gallery">
+
+    <div class="col-lg-2 col-xs-6 col-md-3">
+        <a href="../app/img/material/stemfyla1.jpg" class="thumbnail image-link" title="">
+            <img src="../app/img/material/stemfyla1-lg.jpg" alt="...">
+        </a>
+    </div>
+
+    <div class="col-lg-2 col-xs-6 col-md-3">
+        <a href="../app/img/material/stemfyla2.jpg" class="thumbnail">
+            <img src="../app/img/material/stemfyla2-lg.jpg" alt="..." class="image-link">
+        </a>
+    </div>
+
+    <div class="col-lg-2 col-xs-6 col-md-3">
+        <a href="../app/img/material/stemfyla3.jpg" class="thumbnail">
+            <img src="../app/img/material/stemfyla3-lg.jpg" alt="..." class="image-link">
+        </a>
+    </div>
+
+    <div class="col-lg-2 col-xs-6 col-md-3">
+        <a href="../app/img/material/stemfyla4.jpg" class="thumbnail">
+            <img src="../app/img/material/stemfyla4-lg.jpg" alt="..." class="image-link">
+        </a>
+    </div>
+
+    <div class="col-lg-2 col-xs-6 col-md-3">
+        <a href="../app/img/material/stemfyla5.jpg" class="thumbnail">
+            <img src="../app/img/material/stemfyla5-lg.jpg" alt="..." class="image-link">
+        </a>
+    </div>
+
+    <div class="col-lg-2 col-xs-6 col-md-3">
+        <a href="../app/img/material/stemfyla6.jpg" class="thumbnail">
+            <img src="../app/img/material/stemfyla6-lg.jpg" alt="..." class="image-link">
+        </a>
+    </div>
+
+    <div class="col-lg-2 col-xs-6 col-md-3">
+        <a href="../app/img/material/stemfyla7.jpg" class="thumbnail">
+            <img src="../app/img/material/stemfyla7-lg.jpg" alt="..." class="image-link">
+        </a>
+    </div>
+
+    <div class="col-lg-2 col-xs-6 col-md-3">
+        <a href="../app/img/material/stemfyla8.jpg" class="thumbnail">
+            <img src="../app/img/material/stemfyla8-lg.jpg" alt="..." class="image-link">
+        </a>
+    </div>
+    <div class="col-lg-2 col-xs-6 col-md-3">
+        <a href="../app/img/material/stemfyla9.jpg" class="thumbnail">
+            <img src="../app/img/material/stemfyla9-lg.jpg" alt="..." class="image-link">
+        </a>
+    </div>
+    <div class="col-lg-2 col-xs-6 col-md-3">
+        <a href="../app/img/material/stemfyla10.jpg" class="thumbnail">
+            <img src="../app/img/material/stemfyla10-lg.jpg" alt="..." class="image-link">
+        </a>
+    </div>
+    <div class="col-lg-2 col-xs-6 col-md-3">
+        <a href="../app/img/material/stemfyla11.jpg" class="thumbnail">
+            <img src="../app/img/material/stemfyla11-lg.jpg" alt="..." class="image-link">
+        </a>
+    </div>
+    <div class="col-lg-2 col-xs-6 col-md-3">
+        <a href="../app/img/material/stemfyla12.jpg" class="thumbnail">
+            <img src="../app/img/material/stemfyla12-lg.jpg" alt="..." class="image-link">
+        </a>
+    </div>
+</div>
+
+
+<!-- TODO: load scripts per page -->
+<script>
+    (function () {
+        $('.popup-gallery').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            closeOnContentClick: false,
+            closeBtnInside: false,
+            mainClass: 'mfp-with-zoom mfp-img-mobile',
+            image: {
+                verticalFit: true,
+//                titleSrc: function (item) {
+//                    return item.el.attr('title') + ' &middot; <a class="image-source-link" href="' + item.el.attr('data-source') + '" target="_blank">image source</a>';
+//                }
+            },
+            gallery: {
+                enabled: true
+            },
+            zoom: {
+                enabled: true,
+                duration: 300, // don't foget to change the duration also in CSS
+                opener: function (element) {
+                    return element.find('img');
+                }
+            }
+        });
+    })();
+</script>

@@ -1,0 +1,3 @@
+#Set 400 error page
+#Required when user refresh page, or uses a link with a subdomain
+ErrorDocument 404 /404.html
