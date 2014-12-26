@@ -1,11 +1,3 @@
-<script src="/app/js/catalog/jquery.js"></script>
-<script src="/app/js/catalog/turn.js"></script>
-<script src="/app/js/catalog/jquery.fullscreen.js"></script>
-<script src="/app/js/catalog/jquery.address-1.6.min.js"></script>
-<script src="/app/js/catalog/wait.js"></script>
-<script src="/app/js/catalog/onload.js"></script>
-
-
 <!-- BEGIN FLIPBOOK STRUCTURE -->
 <div id="fb5-ajax">
 
@@ -334,6 +326,10 @@
 
             <div class="fb5-bcg-tools"></div>
 
+            <a id="fb5-logo" href>
+                <img alt="" src="/app/img/logos/logo-stemfyla-180x295.png">
+            </a>
+
             <div class="fb5-menu" id="fb5-center">
                 <ul>
 
@@ -490,8 +486,19 @@
     <!-- END HTML BOOK -->
 
     <!-- CONFIGURATION FLIPBOOK -->
+
+
+    <script src="/app/js/catalog/jquery.js"></script>
+    <script type="text/javascript">
+        var jQuery_1_10_2 = $.noConflict(true);
+    </script>
+    <script src="/app/js/catalog/turn.js"></script>
+    <script src="/app/js/catalog/jquery.fullscreen.js"></script>
+    <script src="/app/js/catalog/jquery.address-1.6.min.js"></script>
+    <script src="/app/js/catalog/wait.js"></script>
+
     <script>
-        jQuery('#fb5').data('config',
+        jQuery_1_10_2('#fb5').data('config',
                 {
                     "page_width": "550",
                     "page_height": "715",
@@ -510,6 +517,7 @@
                 })
     </script>
 
+    <script src="/app/js/catalog/onload.js"></script>
 
 </div>
 <!-- END FLIPBOOK STRUCTURE -->

@@ -7,7 +7,7 @@
 
 (function () {
 
-    var app = angular.module('stemfylaApp', ['ngRoute']);
+    var app = angular.module('stemfylaApp', ['ngRoute', 'ngAnimate']);
 
     /**
      * Configure routes
@@ -18,7 +18,14 @@
             // Home
             .when("/", {
                 templateUrl: "partials/home.html",
-                controller: "PageController"
+                controller: "PageController",
+                resolve: {
+                    delay: function ($q, $timeout) {
+                        var delay = $q.defer();
+                        $timeout(delay.resolve, 1500);
+                        return delay.promise;
+                    }
+                }
             })
 
             // Pages
@@ -57,9 +64,8 @@
     /**
      * Control all pages
      */
-    app.controller('PageController', function (/* $scope, $location, $http */) {
-        console.log("Page Controller reporting for duty.");
-
+    app.controller('PageController', function ($scope) {
+        $scope.viewLoading = true;
     });
 
     app.directive('partialHeader', function () {
@@ -77,4 +83,43 @@
         };
     });
 
+    app.directive('showDuringResolve', function ($rootScope) {
+
+        return {
+            link: function (scope, element) {
+
+                element.addClass('ng-hide');
+
+                var unregister = $rootScope.$on('$routeChangeStart', function () {
+                    element.removeClass('ng-hide');
+                });
+
+                scope.$on('$destroy', unregister);
+            }
+        };
+    });
+
+
+    app.directive('resolveLoader', function ($rootScope, $timeout) {
+
+        return {
+            restrict: 'E',
+            replace: true,
+            template: '<div class="fa fa-spinner fa-spin fa-5x" ng-hide style="position:fixed;top:50%;left:50%"></div>',
+            link: function (scope, element) {
+
+                $rootScope.$on('$routeChangeStart', function (event, currentRoute, previousRoute) {
+                    if (previousRoute) return;
+
+                    $timeout(function () {
+                        element.removeClass('ng-hide');
+                    });
+                });
+
+                $rootScope.$on('$routeChangeSuccess', function () {
+                    element.addClass('ng-hide');
+                });
+            }
+        };
+    });
 })();

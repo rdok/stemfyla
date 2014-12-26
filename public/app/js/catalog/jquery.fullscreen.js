@@ -144,4 +144,4 @@
 
 			return this;
 	};
-}(jQuery));
+}(jQuery_1_10_2));
