@@ -35,18 +35,18 @@
 
 </head>
 
-<body ng-controller="PageController">
+<body ng-controller="PageController as pageCtrl">
 
 <!-- Website Content -->
 <div class="container-fluid">
 
-    <partial-header></partial-header>
+    <template-header></template-header>
 
-    <resolve-loader></resolve-loader>
+    <template-spinner></template-spinner>
 
     <div ng-view showDuringResolve></div>
 
-    <partial-footer></partial-footer>
+    <template-footer></template-footer>
 
 </div>
 
