@@ -1,3 +1,9 @@
 #Set 400 error page
 #Required when user refresh page, or uses a link with a subdomain
-ErrorDocument 404 /404.html
+ErrorDocument 404 /index.html
+
+# http://stackoverflow.com/q/15521130/2790481
+AddType application/vnd.ms-fontobject .eot
+AddType font/ttf .ttf
+AddType font/otf .otf
+AddType application/x-font-woff .woff

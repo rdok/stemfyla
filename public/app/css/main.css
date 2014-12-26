@@ -90,7 +90,6 @@ a {
     text-decoration: none;
 }
 
-
 #fb5 #fb5-about h1, #fb5 #fb5-about h2, #fb5 #fb5-about h3, #fb5 #fb5-about h4, #fb5 #fb5-about h5, #fb5 #fb5-about h6 {
     color: #000;
 }
@@ -100,3 +99,10 @@ a {
     font-family: PFUniversal-Light;
     font-size: 1.5em;
 }
+
+.row.popup-gallery {
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-top: 17px;
+}
+

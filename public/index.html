@@ -21,7 +21,7 @@
 
 
     <!-- Custom styles -->
-    <link href="app/css/nav-bar.css" rel="stylesheet">
+    <link href="app/css/header.css" rel="stylesheet">
     <link href="app/css/footer.css" rel="stylesheet">
     <link href="app/css/catalog.css" rel="stylesheet">
     <link href="app/css/main.css" rel="stylesheet">
@@ -38,13 +38,15 @@
 <body ng-controller="PageController">
 
 <!-- Website Content -->
-<div class="container-fluid" id="content">
+<div class="container-fluid">
 
     <partial-header></partial-header>
 
-    <div ng-view></div>
+    <resolve-loader></resolve-loader>
 
-    <app-footer></app-footer>
+    <div ng-view showDuringResolve></div>
+
+    <partial-footer></partial-footer>
 
 </div>
 
@@ -58,7 +60,10 @@
 <script src="app/lib/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-route.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-animate.js"></script>
+
 <script src="app/js/ie10-viewport-bug-workaround.js"></script>
+
 
 <!-- Custom scripts -->
 <script src="app/js/main.js"></script>
