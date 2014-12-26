@@ -109,3 +109,7 @@ a {
 #fb5-footer {
     display: none;
 }
+
+#fb5 .fb5-preloader .wBall .wInnerBall {
+    background: #5F021F;
+}
