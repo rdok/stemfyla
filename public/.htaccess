@@ -1,6 +1,6 @@
 #Set 400 error page
 #Required when user refresh page, or uses a link with a subdomain
-ErrorDocument 404 /index.html
+ErrorDocument 404 /index.php
 
 # http://stackoverflow.com/q/15521130/2790481
 AddType application/vnd.ms-fontobject .eot

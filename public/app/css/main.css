@@ -1,3 +1,7 @@
+@import url('header.css');
+@import url('footer.css');
+@import url('catalog.css');
+
 @font-face {
     font-family: PFUniversal-Regular;
     src: url("../fonts/PFUniversal-Regular.otf") format("opentype");
@@ -106,17 +110,11 @@ a {
     padding-top: 17px;
 }
 
-/** Catalog **/
-#fb5 .fb5-preloader .wBall .wInnerBall {
-    /*background: #5F021F;*/
+.fa-spin {
+    -webkit-animation: fa-spin 1.3s infinite linear;
+    animation: fa-spin 1.3s infinite linear;
 }
 
-#fb5 #fb5-all-pages .fb5-container-pages {
-    /*background: none repeat scroll 0 0 #000000;*/
-    /*box-shadow: 0 0 40px rgba(95, 2, 31, 0.8);*/
-    /*margin-top: 35.55em;*/
-}
-
-#fb5 .fb5-overlay {
-    /*background: rgba(0, 0, 0, 0);*/
+#fb5-container-book {
+    /*cursor: zoom-in !important;*/
 }

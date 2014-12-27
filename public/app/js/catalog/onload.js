@@ -1199,7 +1199,7 @@
                 $('#fb5-container-book').unbind('mouseup', Book_v5.drop);
                 $('#fb5-container-book').unbind('mousemove', Book_v5.book_grab);
                 $('#fb5-container-book').unbind('mousemove', Book_v5.book_grabbing);
-                $('#fb5-container-book').css('cursor', 'default');
+                $('#fb5-container-book').css('cursor', 'zoom-in');
             } else {
                 //mobile
                 $('#fb5-container-book').bind('touchstart', Book_v5.touchstart_book);
@@ -1465,13 +1465,14 @@
 
             // Double Click
             if (ZOOM_DOUBLE_CLICK_ENABLED == "true") {
+                // modifed by @rdokollari -- single click for zoom as per client requirment
                 $('#fb5-book').dblclick(function () {
 
                     if (Book_v5.checkScrollBook() == false) { //zoom
                         Book_v5.zoomTo(ZOOM_DOUBLE_CLICK)
                     } else {
                         Book_v5.zoomAuto();
-                        $('#fb5-container-book').css('cursor', 'default');
+                        $('#fb5-container-book').css('cursor', 'zoom-in');
                     }
                 });
             }
