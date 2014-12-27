@@ -118,3 +118,18 @@ a {
 #fb5-container-book {
     /*cursor: zoom-in !important;*/
 }
+
+#fb5 #fb5-footer {
+    height: 4.6em;
+}
+
+.slick-slider-c {
+    background: none repeat scroll 0 0 #000000;
+    box-shadow: 0 0 40px rgba(95, 2, 31, 0.8);
+}
+
+.center-c {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
