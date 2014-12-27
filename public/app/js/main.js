@@ -112,4 +112,20 @@
             templateUrl: 'templates/spinner.html'
         };
     });
+
+
+    // background. credit due: http://stackoverflow.com/a/13782311
+    app.directive('backImg', function () {
+        return function (scope, element, attrs) {
+            attrs.$observe('backImg', function () {
+                element.css({
+                    'background': 'url("/app/img/backgrounds/background-1920x1080.jpg") no-repeat center center fixed',
+                    '-webkit-background-size': 'cover',
+                    '-moz-background-size': 'cover',
+                    '-o-background-size': 'cover',
+                    'background-size': 'cover'
+                });
+            });
+        };
+    });
 })();
