@@ -59,7 +59,12 @@
                 controller: "PageController",
                 activeTab: '#catalog-3'
             })
-
+            .when("/catalog-4",
+            {
+                templateUrl: "partials/catalog-4.html",
+                controller: "PageController",
+                activeTab: '#catalog-4'
+            })
             // else 404
             .otherwise("/404",
             {
