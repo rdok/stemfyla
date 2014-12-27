@@ -47,6 +47,12 @@
                 controller: "PageController",
                 activeTab: '#contact'
             })
+            .when("/catalog-2",
+            {
+                templateUrl: "partials/catalog-2.html",
+                controller: "PageController",
+                activeTab: '#catalog-2'
+            })
 
             // else 404
             .otherwise("/404",

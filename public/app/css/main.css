@@ -106,10 +106,17 @@ a {
     padding-top: 17px;
 }
 
-#fb5-footer {
-    display: none;
+/** Catalog **/
+#fb5 .fb5-preloader .wBall .wInnerBall {
+    /*background: #5F021F;*/
 }
 
-#fb5 .fb5-preloader .wBall .wInnerBall {
-    background: #5F021F;
+#fb5 #fb5-all-pages .fb5-container-pages {
+    /*background: none repeat scroll 0 0 #000000;*/
+    /*box-shadow: 0 0 40px rgba(95, 2, 31, 0.8);*/
+    /*margin-top: 35.55em;*/
+}
+
+#fb5 .fb5-overlay {
+    /*background: rgba(0, 0, 0, 0);*/
 }
