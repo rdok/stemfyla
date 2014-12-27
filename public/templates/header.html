@@ -17,6 +17,19 @@
                      height="100"/></a>
         </div>
         <!-- /.navbar-header -->
+
+        <div class="dropdown pull-right">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                    aria-expanded="true">
+                Κατάλογος
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <li ng-class="{active: $route.current.activeTab == '#catalog-2'}" role="presentation">
+                    <a role="menuitem" tabindex="-1" href="/#catalog-2">2η Έκδοση</a></li>
+            </ul>
+        </div>
+
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li ng-class="{active: $route.current.activeTab == '/'}">
