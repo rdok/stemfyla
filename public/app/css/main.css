@@ -15,7 +15,6 @@
 .full {
     /*background: url("../img/backgrounds/background-1920x1080.jpg") no-repeat center center fixed;*/
 
-
 }
 
 body {
@@ -129,4 +128,12 @@ a {
     float: none;
     margin-left: auto;
     margin-right: auto;
+}
+
+#fb5-cover-title {
+    position: relative !important;
+    border: none !important;
+    top: 8em !important;
+    font-family: PFUniversal-Light, 'Roboto' !important;, sans-serif;
+    color: black !important;
 }
