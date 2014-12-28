@@ -113,6 +113,7 @@ a {
 
 #fb5-container-book {
     /*cursor: zoom-in !important;*/
+    top: 0 !important;
 }
 
 #fb5 #fb5-footer {
@@ -156,4 +157,10 @@ h3 {
 
 #catalog-title {
     margin-left: 8px !important;
+}
+
+@media (max-width: 767px) {
+    #fb5 {
+        height: 10em !important;
+    }
 }
