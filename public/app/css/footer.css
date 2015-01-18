@@ -23,7 +23,6 @@ body {
     margin-top: 1em;
 }
 
-
 .social-message {
     color: #000000;
     font-size: .6em !important;
@@ -70,18 +69,27 @@ body {
     }
 }
 
+/**
+* Tablets
+**/
 @media (min-width: 320px) and (max-width: 767px) {
     .social-message {
         padding-left: 2.6em;
     }
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     .social-message {
         padding-left: 0.7em;
     }
+
     #facebook-logo {
         margin-left: -0em;
+    }
+
+    .footer {
+        margin-left: 1.5em;
     }
 }
 
@@ -89,11 +97,19 @@ body {
     .social-message {
         padding-left: 2.3em;
     }
+
+    .footer {
+        margin-left: 1.7em;
+    }
 }
 
 @media (min-width: 1200px) {
     .social-message {
         padding-left: .3em !important;
+    }
+
+    .footer {
+        margin-left: 1.7em;
     }
 }
 
