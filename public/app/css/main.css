@@ -159,6 +159,10 @@ h3 {
     margin-left: 8px !important;
 }
 
+#home-page-div{
+    padding-top: 2em;
+}
+
 @media (max-width: 767px) {
     #fb5 {
         height: 10em !important;
