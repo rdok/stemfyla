@@ -50,6 +50,7 @@ body {
 
 #facebook-logo {
     padding-left: 0em;
+    margin-left: -1em;
 }
 
 /**
@@ -78,6 +79,9 @@ body {
 @media (min-width: 768px) and (max-width: 991px) {
     .social-message {
         padding-left: 0.7em;
+    }
+    #facebook-logo {
+        margin-left: -0em;
     }
 }
 
