@@ -164,3 +164,10 @@ h3 {
         height: 10em !important;
     }
 }
+
+@media (min-width: 768px) {
+    #home-main-p {
+        padding-left: 3em;
+        padding-right: 3em
+    }
+}
