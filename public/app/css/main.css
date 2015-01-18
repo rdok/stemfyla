@@ -159,7 +159,7 @@ h3 {
     margin-left: 8px !important;
 }
 
-#material-page-div{
+#material-page-div {
     padding-top: 2em;
 }
 
@@ -167,6 +167,7 @@ h3 {
     #fb5 {
         height: 10em !important;
     }
+
 }
 
 @media (min-width: 768px) {
@@ -174,4 +175,16 @@ h3 {
         padding-left: 3em;
         padding-right: 3em
     }
+
+    #future-live-events-msg {
+        padding-top: 9em;
+    }
+}
+
+.vertical-center {
+    min-height: 100%; /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+
+    display: flex;
+    align-items: center;
 }
