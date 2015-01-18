@@ -1,10 +1,50 @@
 <div class="container">
     <div class="row popup-gallery">
 
-        <div class="col-lg-2 col-xs-6 col-md-3">
-            <a href="app/img/material/stemfyla1.jpg" class="thumbnail image-link" title="">
-                <img src="app/img/material/stemfyla1-lg.jpg" alt="Company working day image">
+        <div class="col-lg-push-2 col-lg-4 col-md-push-2 col-md-5 col-xs-push-2 col-xs-7">
+            <a href="app/img/live-events/ekd_kyriakh.jpg" class="thumbnail image-link" title="">
+                <img src="app/img/live-events/ekd_kyriakh.jpg" alt="Company working day image">
+
+                <div class="caption text-center">
+                    <h3>
+                        Κάθε Κυριακή στις 4:00μμ σας ταξιδεύουμε σε Εντεχνο-Λαικά μονοπάτια!
+                    </h3>
+                </div>
             </a>
         </div>
     </div>
+
+
+    <div class="text-center">
+        Περισσότερες εβδομαδιαίες εκδηλώσεις θα ανακοινωθούν πολύ σύντομα!
+    </div>
 </div>
+
+<!-- TODO: load scripts per page -->
+<script>
+    (function () {
+        $('.popup-gallery').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            closeOnContentClick: false,
+            closeBtnInside: false,
+            mainClass: 'mfp-with-zoom mfp-img-mobile',
+            image: {
+                verticalFit: true
+//                titleSrc: function (item) {
+//                    return item.el.attr('title') + ' &middot; <a class="image-source-link" href="' + item.el.attr('data-source') + '" target="_blank">image source</a>';
+//                }
+            },
+            gallery: {
+                enabled: true
+            },
+            zoom: {
+                enabled: true,
+                duration: 300, // don't foget to change the duration also in CSS
+                opener: function (element) {
+                    return element.find('img');
+                }
+            }
+        });
+    })();
+</script>
