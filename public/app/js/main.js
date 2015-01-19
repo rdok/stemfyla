@@ -47,24 +47,6 @@
                 controller: "PageController",
                 activeTab: '#contact'
             })
-            .when("/catalog-2",
-            {
-                templateUrl: "partials/catalog-2.html",
-                controller: "PageController",
-                activeTab: '#catalog-2'
-            })
-            .when("/catalog-3",
-            {
-                templateUrl: "partials/catalog-3.html",
-                controller: "PageController",
-                activeTab: '#catalog-3'
-            })
-            .when("/catalog-4",
-            {
-                templateUrl: "partials/catalog-4.html",
-                controller: "PageController",
-                activeTab: '#catalog-4'
-            })
             // else 404
             .otherwise("/404",
             {
@@ -94,6 +76,34 @@
 
         // Expose $route to controller
         $scope.$route = $route;
+    });
+
+
+    app.controller('ReservationController', function ($http) {
+        this.reservation = {};
+
+        this.sendReservation = function () {
+
+            $http({
+                method: 'POST',
+                url: 'mail/requestReservation.php',
+                data: this.reservation,
+                headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+            }).
+                success(function (data, status, headers, config) {
+                    // this callback will be called asynchronously
+                    // when the response is available
+
+                    alert("success");
+                    console.log(data);
+                }).
+                error(function (data, status, headers, config) {
+                    // called asynchronously if an error occurs
+                    // or server returns response with an error status.
+
+                    alert("error");
+                });
+        };
     });
 
     app.directive('templateHeader', function () {
