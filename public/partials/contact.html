@@ -22,52 +22,66 @@
 <div class="col-xs-10 col-xs-offset-1">
     <div class="well well-sm form-group">
         <form class="form-horizontal" name="reservationForm" ng-controller="ReservationController as reservationCtrl"
-              novalidate role="form" ng-submit="reservationCtrl.sendReservation()">
+              novalidate role="form" ng-submit="reservationForm.$valid  && reservationCtrl.sendReservation()">
             <fieldset>
                 <legend class="text-center header">Συμπληρώστε τη παρακάτω φόρμα για να κάνετε κράτηση</legend>
                 <div class="form-group">
                     <div class="col-md-5 col-md-offset-1">
                         <input name="fName" ng-model="reservationCtrl.reservation.fName" type="text" placeholder="Ονομα"
                                ng-minlength="3" required class="form-control">
+                        <span ng-show="reservationForm.fName.$dirty && !reservationForm.fName.$valid" class="error">Το Όνομα είναι υποχρεωτικό.
+                            Ελάχιστο 3 χαρακτήρες.</span>
                     </div>
                     <div class="col-md-5 col-md-offset-0">
-                        <input name="lName" ng-model="reservationCtrl.reservation.lName" type="text" placeholder="Επίθετο"
+                        <input name="lName" ng-model="reservationCtrl.reservation.lName" type="text"
+                               placeholder="Επίθετο"
                                ng-minlength="3" required class="form-control">
+                        <span ng-show="reservationForm.lName.$dirty && !reservationForm.lName.$valid" class="error">Το
+                            Επίθετο είναι υποχρεωτικό. Ελάχιστο 3 χαρακτήρες.</span>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <div class="col-md-10 col-md-offset-1">
-                        <input name="email" type="email" ng-model="reservationCtrl.reservation.email" placeholder="Email"
+                        <input name="email" type="email" ng-model="reservationCtrl.reservation.email"
+                               placeholder="Email"
                                class="form-control" required>
+                        <span ng-show="reservationForm.email.$dirty && !reservationForm.email.$valid" class="error">Η
+                            διεύθυνση ηλεκτρονικού ταχυδρομείου δεν είναι έγκυρη ή σε λάθος μορφή</span>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <div class="col-md-10 col-md-offset-1">
-                        <input ng-model="reservationCtrl.reservation.phone" name="phone" type="text" placeholder="Τηλέφωνο"
+                        <input ng-model="reservationCtrl.reservation.phone" name="phone" type="number" ng-minlength="10"
+                               placeholder="Τηλέφωνο"
                                class="form-control">
+                        <span ng-show="reservationForm.phone.$dirty && !reservationForm.phone.$valid" class="error">
+                            Ο αριθμός τηλεφώνου δεν είναι έγκυρος. Ελάχιστο 10 αριθμοί.</span>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <div class="col-md-10 col-md-offset-1">
-                                <textarea class="form-control" name="message" ng-model="reservationCtrl.reservation.message"
+                                <textarea class="form-control" name="message"
+                                          ng-model="reservationCtrl.reservation.message"
                                           placeholder="Γράψτε το μήνυμά σας εδώ και θα σας απαντήσουμε άμεσα"
+                                          ng-minlength="10"
                                           rows="3" required></textarea>
+                        <span ng-show="reservationForm.message.$dirty && !reservationForm.message.$valid" class="error">
+                            Το μήνυμά σας είναι πολύ μικρό. Παρακαλώ προσθέστε μερικές περισσότερες λέξεις.</span>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <div class="row">
-                        <!--<div class="g-recaptcha"-->
-                             <!--data-sitekey="6LcErwATAAAAAEEpxMH1DbLDt7qgTYNDCxHPosy3"></div>-->
-                        <div>reservationForm is {{ reservationForm.$valid }}</div>
+                        <div class="g-recaptcha"
+                             data-sitekey="6LcErwATAAAAAEEpxMH1DbLDt7qgTYNDCxHPosy3"></div>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="row text-center">
-                        <input type="submit" class="btn btn-primary" value="Αποστολή"/>
+                        <button type="submit" class="btn btn-default">Αποστολή</button>
                     </div>
                 </div>
             </fieldset>

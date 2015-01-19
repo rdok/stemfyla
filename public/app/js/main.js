@@ -79,8 +79,12 @@
     });
 
 
-    app.controller('ReservationController', function ($http) {
+    app.controller('ReservationController', function ($http, $scope) {
         this.reservation = {};
+
+        $scope.submit = function() {
+            alert("submit");
+        };
 
         this.sendReservation = function () {
 
