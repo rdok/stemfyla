@@ -79,7 +79,7 @@
     });
 
 
-    app.controller('ReservationController', function ($http, $scope) {
+    app.controller('ReservationController', function ($http, $scope, vcRecaptchaService) {
 
         this.reservation = {};
         $scope.response = null;
@@ -106,11 +106,14 @@
             }).
                 success(function (data, status, headers, config) {
                     $('.bs-example-modal-sm').modal('toggle');
+                    $scope.reservationForm.$setPristine();
+                    vcRecaptchaService.reload($scope.widgetId);
                 }).
                 error(function (data, status, headers, config) {
                     // In case of a failed validation you need to reload the captcha
                     // because each response can be checked just once
                     vcRecaptchaService.reload($scope.widgetId);
+                    $scope.reservationForm.$setPristine();
                 });
         };
     });

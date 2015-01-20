@@ -80,8 +80,8 @@
                                           placeholder="Γράψτε το μήνυμά σας εδώ και θα σας απαντήσουμε άμεσα"
                                           ng-minlength="10"
                                           rows="3" required></textarea>
-                        <div ng-show="reservationForm.$submitted || form.phone.$touched || reservationForm.phone.$dirty">
-                            <span ng-show="!reservationForm.phone.$valid" class="error">
+                        <div ng-show="reservationForm.$submitted || form.message.$touched || reservationForm.message.$dirty">
+                            <span ng-show="!reservationForm.message.$valid" class="error">
                                 Το μήνυμά σας είναι πολύ μικρό. Παρακαλώ προσθέστε μερικές περισσότερες λέξεις.</span>
                         </div>
                     </div>
