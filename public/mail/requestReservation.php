@@ -4,17 +4,19 @@
 require '../../vendor/autoload.php';
 use Mailgun\Mailgun;
 
-require_once "recaptchalib.php";
+// if this functioncality becomes more complex then use a config.php file and use absolute paths instead of relative
+require_once "../../app/recaptchalib.php";
+require_once "../../app/ReCAPTCHARetriever.class.php";
 
 // Google recaptcha preparations
-$siteKey = "6LcErwATAAAAAEEpxMH1DbLDt7qgTYNDCxHPosy3";
-$secret = "6LcDrwATAAAAAJYjjXwNFdZYfg47l5d8ya6ZD7Fw";
+$siteKey = ReCAPTCHARetriever::retrieveSiteKey();
+$secret = ReCAPTCHARetriever::retrieveSecretKey();;
 $lang = "el";
 // The response from reCAPTCHA
 $resp = null;
 // The error code from reCAPTCHA, if any
 $error = null;
-$reCaptcha = new ReCaptcha($secret);
+$reCaptcha = new ReCAPTCHARetriever($secret);
 
 // Retrieve data from angularjs
 $postdata = file_get_contents("php://input");
