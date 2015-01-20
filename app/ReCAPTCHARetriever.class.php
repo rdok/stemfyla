@@ -9,7 +9,7 @@
 class ReCAPTCHARetriever
 {
     /** stemfyla.gr */
-	const PRODUCTION_HOST = "";
+	const PRODUCTION_HOST = "stemfyla.gr";
 	const SITE_KEY_PRODUCTION = "";
 	const PRIVATE_KEY_PRODUCTION = "";
 
