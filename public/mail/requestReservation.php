@@ -46,12 +46,12 @@ $currentDate = date('m/d/Y h:i:s a', time());
 
 # Now, compose and send the message.
 $mg->sendMessage($domain, array('from' => 'no-reply@stemfyla.gr',
-    'to' => 'r.dokollari@gmail.com',
+    'to' => 'nicolaosmathioudakis@gmail.com',
     'subject' => 'Stemfyla | New Reservation Request',
     'text' => 'Your mail does not support html',
     'html' => $html,
     'vars' => '{"phone": "$request->phone"}',
-    'recipient-variables' => '{"r.dokollari@gmail.com": {"fName":"' . $request->fName . '","lName":"' . $request->lName
+    'recipient-variables' => '{"nicolaosmathioudakis@gmail.com": {"fName":"' . $request->fName . '","lName":"' . $request->lName
         . '", "id":1, "phone":"' . $request->phone . '", "currentDate":"' . $currentDate . '", "email":"' .
         $request->email . '", "message":"' . $request->message . '"}}'
 ));
