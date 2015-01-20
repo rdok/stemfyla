@@ -13,7 +13,8 @@ class ReCAPTCHARetriever
 	const SITE_KEY_PRODUCTION = "";
 	const PRIVATE_KEY_PRODUCTION = "";
 
-	const STAGE_HOST = "stemfyla.herokuapp.com";
+    /** stemfyla.herokuapp.com - heroku defaults 'server_name' to localhost. go figure :/  */
+	const STAGE_HOST = "localhost";
 	const SITE_KEY_STAGE = "6LcDrwATAAAAADJopKdn7jXOr585kHiSKmcVJ0E-";
 	const PRIVATE_KEY_STAGE = "6LcDrwATAAAAAJYjjXwNFdZYfg47l5d8ya6ZD7Fw";
 
