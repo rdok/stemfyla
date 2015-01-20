@@ -84,7 +84,7 @@
         $scope.response = null;
         $scope.widgetId = null;
         $scope.model = {
-            key: '6LcErwATAAAAAEEpxMH1DbLDt7qgTYNDCxHPosy3'
+            key: '6LcDrwATAAAAADJopKdn7jXOr585kHiSKmcVJ0E-'
         };
 
         $scope.setResponse = function (response) {

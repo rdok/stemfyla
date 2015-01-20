@@ -7,8 +7,8 @@ use Mailgun\Mailgun;
 require_once "recaptchalib.php";
 
 // Google recaptcha preparations
-$siteKey = "6LcErwATAAAAAEEpxMH1DbLDt7qgTYNDCxHPosy3";
-$secret = "6LcErwATAAAAAEe3lVNHe5ciZeU2lkr8e_FDsHqW";
+$siteKey = "6LcDrwATAAAAADJopKdn7jXOr585kHiSKmcVJ0E-";
+$secret = "6LcDrwATAAAAAJYjjXwNFdZYfg47l5d8ya6ZD7Fw";
 $lang = "en";
 // The response from reCAPTCHA
 $resp = null;
