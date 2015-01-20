@@ -191,7 +191,7 @@ h3 {
 
 .ng-invalid.ng-dirty, .error {
     border-color: #FA787E;
-    color: darkred;
+    color: #5f021f;
     font-size: .9em;
 }
 
