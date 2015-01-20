@@ -7,7 +7,7 @@
 
 (function () {
 
-    var app = angular.module('stemfylaApp', ['ngRoute', 'ngAnimate']);
+    var app = angular.module('stemfylaApp', ['ngRoute', 'ngAnimate', 'vcRecaptcha']);
 
     /**
      * Configure routes
@@ -81,31 +81,38 @@
 
     app.controller('ReservationController', function ($http, $scope) {
         this.reservation = {};
+        $scope.response = null;
+        $scope.widgetId = null;
+        $scope.model = {
+            key: '6LcErwATAAAAAEEpxMH1DbLDt7qgTYNDCxHPosy3'
+        };
 
-        $scope.submit = function() {
-            alert("submit");
+        $scope.setResponse = function (response) {
+            $scope.response = response;
+        };
+
+        $scope.setWidgetId = function (widgetId) {
+            $scope.widgetId = widgetId;
         };
 
         this.sendReservation = function () {
-
+            this.reservation.gRecaptchaResponse = $scope.response;
+            console.log("test:" + this.reservation.gRecaptchaResponse);
             $http({
                 method: 'POST',
-                url: 'mail/requestReservation.php',
+                url: "mail/requestReservation.php",
                 data: this.reservation,
                 headers: {'Content-Type': 'application/x-www-form-urlencoded'}
             }).
                 success(function (data, status, headers, config) {
-                    // this callback will be called asynchronously
-                    // when the response is available
-
                     alert("success");
                     console.log(data);
                 }).
                 error(function (data, status, headers, config) {
-                    // called asynchronously if an error occurs
-                    // or server returns response with an error status.
-
-                    alert("error");
+                    // In case of a failed validation you need to reload the captcha
+                    // because each response can be checked just once
+                    vcRecaptchaService.reload($scope.widgetId);
+                    console.log(data);
                 });
         };
     });
