@@ -50,7 +50,7 @@ $currentDate = date('m/d/Y h:i:s a', time());
 # Now, compose and send the message.
 $mg->sendMessage($domain, array('from' => 'no-reply@stemfyla.gr',
     'to' => 'r.dokollari@gmail.com',
-    'subject' => 'Stemfyla | New Reservation Request',
+    'subject' => 'Stemfyla | Νέο αίτημα κράτησης',
     'text' => 'Your mail does not support html',
     'html' => $html,
     'vars' => '{"phone": "$request->phone"}',
