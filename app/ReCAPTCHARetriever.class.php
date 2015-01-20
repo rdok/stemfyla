@@ -13,8 +13,7 @@ class ReCAPTCHARetriever
 	const SITE_KEY_PRODUCTION = "";
 	const PRIVATE_KEY_PRODUCTION = "";
 
-    /** stemfyla.herokuapp.com - heroku defaults 'server_name' to localhost. go figure :/  */
-	const STAGE_HOST = "localhost";
+	const STAGE_HOST = "stemfyla.herokuapp.com";
 	const SITE_KEY_STAGE = "6LcDrwATAAAAADJopKdn7jXOr585kHiSKmcVJ0E-";
 	const PRIVATE_KEY_STAGE = "6LcDrwATAAAAAJYjjXwNFdZYfg47l5d8ya6ZD7Fw";
 
@@ -27,15 +26,21 @@ class ReCAPTCHARetriever
 		$currentHost = $_SERVER['SERVER_NAME'];
 
 		if (strcmp($currentHost, self::PRODUCTION_HOST) === 0) return self::SITE_KEY_PRODUCTION;
-		if (strcmp($currentHost, self::STAGE_HOST) === 0) return self::SITE_KEY_STAGE;
 		if (strcmp($currentHost, self::DEVELOPMENT_RDOK_HOST) === 0) return self::SITE_KEY_DEVELOPMENT_RDOK;
+        /** stemfyla.herokuapp.com - heroku defaults 'server_name' to localhost. yet $_SERVER['SERVER_NAME'] does not
+         * outputes correct results.
+         * go figure :/  */
+        return self::SITE_KEY_STAGE;
 	}
 
 	public static function retrieveSecretKey() {
 		$currentHost = $_SERVER['SERVER_NAME'];
 
 		if (strcmp($currentHost, self::PRODUCTION_HOST) === 0) return self::PRIVATE_KEY_PRODUCTION;
-		if (strcmp($currentHost, self::STAGE_HOST) === 0) return self::PRIVATE_KEY_STAGE;
 		if (strcmp($currentHost, self::DEVELOPMENT_RDOK_HOST) === 0) return self::PRIVATE_KEY_DEVELOPMENT_RDOK;
+        /** stemfyla.herokuapp.com - heroku defaults 'server_name' to localhost. yet $_SERVER['SERVER_NAME'] does not
+         * outputes correct results.
+         * go figure :/  */
+        return self::PRIVATE_KEY_STAGE;
 	}
 }
