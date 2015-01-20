@@ -9,8 +9,8 @@ require_once "../../app/recaptchalib.php";
 require_once "../../app/ReCAPTCHARetriever.class.php";
 
 // Google recaptcha preparations
-$siteKey = '6LcDrwATAAAAADJopKdn7jXOr585kHiSKmcVJ0E-';
-$secret = '6LcDrwATAAAAAJYjjXwNFdZYfg47l5d8ya6ZD7Fw';
+$siteKey = '6LeVuwATAAAAAGRlNwp-JRM_kwK5NqD0Q8vUfY_t';
+$secret = '6LeVuwATAAAAAGRaxc7ZvVCufdZQZpG7--GA9Z95';
 
 $lang = "el";
 // The response from reCAPTCHA
