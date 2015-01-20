@@ -35,6 +35,7 @@ The below are valid when the project is already prepared. That is, no instructio
 
 ##Tools
 - [bower](http://bower.io/) Web sites are made of lots of things — frameworks, libraries, assets, utilities, and rainbows. Bower manages all these things for you.
+- [composer](https://getcomposer.org/)Composer is a tool for dependency management in PHP. It allows you to declare the dependent libraries your project needs and it will install them in your project for you.
 
 ## Source
 - [T0021-airpair-angularjs-tutorial](https://github.com/airpair/T0021-airpair-angularjs-tutorial)
