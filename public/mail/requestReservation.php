@@ -9,7 +9,7 @@ require_once "recaptchalib.php";
 // Google recaptcha preparations
 $siteKey = "6LcDrwATAAAAADJopKdn7jXOr585kHiSKmcVJ0E-";
 $secret = "6LcDrwATAAAAAJYjjXwNFdZYfg47l5d8ya6ZD7Fw";
-$lang = "en";
+$lang = "el";
 // The response from reCAPTCHA
 $resp = null;
 // The error code from reCAPTCHA, if any
