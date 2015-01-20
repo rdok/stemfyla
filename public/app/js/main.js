@@ -98,7 +98,6 @@
 
         this.sendReservation = function () {
             this.reservation.gRecaptchaResponse = $scope.response;
-            console.log("test:" + this.reservation.gRecaptchaResponse);
             $http({
                 method: 'POST',
                 url: "mail/requestReservation.php",
@@ -112,7 +111,6 @@
                     // In case of a failed validation you need to reload the captcha
                     // because each response can be checked just once
                     vcRecaptchaService.reload($scope.widgetId);
-                    console.log(data);
                 });
         };
     });
