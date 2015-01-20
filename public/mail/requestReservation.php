@@ -7,7 +7,7 @@ use Mailgun\Mailgun;
 require_once "recaptchalib.php";
 
 // Google recaptcha preparations
-$siteKey = "6LcDrwATAAAAADJopKdn7jXOr585kHiSKmcVJ0E-";
+$siteKey = "6LcErwATAAAAAEEpxMH1DbLDt7qgTYNDCxHPosy3";
 $secret = "6LcDrwATAAAAAJYjjXwNFdZYfg47l5d8ya6ZD7Fw";
 $lang = "el";
 // The response from reCAPTCHA
@@ -46,12 +46,12 @@ $currentDate = date('m/d/Y h:i:s a', time());
 
 # Now, compose and send the message.
 $mg->sendMessage($domain, array('from' => 'no-reply@stemfyla.gr',
-    'to' => 'nicolaosmathioudakis@gmail.com',
+    'to' => 'r.dokollari@gmail.com',
     'subject' => 'Stemfyla | New Reservation Request',
     'text' => 'Your mail does not support html',
     'html' => $html,
     'vars' => '{"phone": "$request->phone"}',
-    'recipient-variables' => '{"nicolaosmathioudakis@gmail.com": {"fName":"' . $request->fName . '","lName":"' . $request->lName
+    'recipient-variables' => '{"r.dokollari@gmail.com": {"fName":"' . $request->fName . '","lName":"' . $request->lName
         . '", "id":1, "phone":"' . $request->phone . '", "currentDate":"' . $currentDate . '", "email":"' .
         $request->email . '", "message":"' . $request->message . '"}}'
 ));
