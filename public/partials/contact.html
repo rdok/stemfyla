@@ -22,22 +22,28 @@
 <div class="col-xs-10 col-xs-offset-1">
     <div class="well well-sm form-group">
         <form class="form-horizontal" name="reservationForm" ng-controller="ReservationController as reservationCtrl"
-              novalidate role="form" ng-submit="reservationForm.$valid  && reservationCtrl.sendReservation()">
+              novalidate role="form">
             <fieldset>
                 <legend class="text-center header">Συμπληρώστε τη παρακάτω φόρμα για να κάνετε κράτηση</legend>
                 <div class="form-group">
                     <div class="col-md-5 col-md-offset-1">
                         <input name="fName" ng-model="reservationCtrl.reservation.fName" type="text" placeholder="Ονομα"
                                ng-minlength="3" required class="form-control">
-                        <span ng-show="reservationForm.fName.$dirty && !reservationForm.fName.$valid" class="error">Το Όνομα είναι υποχρεωτικό.
-                            Ελάχιστο 3 χαρακτήρες.</span>
+
+                        <div ng-show="reservationForm.$submitted || form.fName.$touched || reservationForm.fName.$dirty">
+                            <span ng-show="!reservationForm.fName.$valid" class="error">Το Όνομα είναι υποχρεωτικό.
+                             Ελάχιστο 3 χαρακτήρες.</span>
+                        </div>
                     </div>
                     <div class="col-md-5 col-md-offset-0">
                         <input name="lName" ng-model="reservationCtrl.reservation.lName" type="text"
                                placeholder="Επίθετο"
                                ng-minlength="3" required class="form-control">
-                        <span ng-show="reservationForm.lName.$dirty && !reservationForm.lName.$valid" class="error">Το
-                            Επίθετο είναι υποχρεωτικό. Ελάχιστο 3 χαρακτήρες.</span>
+
+                        <div ng-show="reservationForm.$submitted || form.lName.$touched || reservationForm.lName.$dirty">
+                            <span ng-show="!reservationForm.lName.$valid" class="error">
+                                Το Επίθετο είναι υποχρεωτικό. Ελάχιστο 3 χαρακτήρες.</span>
+                        </div>
                     </div>
                 </div>
 
@@ -46,8 +52,11 @@
                         <input name="email" type="email" ng-model="reservationCtrl.reservation.email"
                                placeholder="Email"
                                class="form-control" required>
-                        <span ng-show="reservationForm.email.$dirty && !reservationForm.email.$valid" class="error">Η
-                            διεύθυνση ηλεκτρονικού ταχυδρομείου δεν είναι έγκυρη ή σε λάθος μορφή</span>
+
+                        <div ng-show="reservationForm.$submitted || form.email.$touched || reservationForm.email.$dirty">
+                                <span ng-show="!reservationForm.email.$valid" class="error">
+                                Η διεύθυνση ηλεκτρονικού ταχυδρομείου δεν είναι έγκυρη ή σε λάθος μορφή</span>
+                        </div>
                     </div>
                 </div>
 
@@ -55,9 +64,12 @@
                     <div class="col-md-10 col-md-offset-1">
                         <input ng-model="reservationCtrl.reservation.phone" name="phone" type="number" ng-minlength="10"
                                placeholder="Τηλέφωνο"
-                               class="form-control">
-                        <span ng-show="reservationForm.phone.$dirty && !reservationForm.phone.$valid" class="error">
+                               class="form-control" required>
+
+                        <div ng-show="reservationForm.$submitted || form.phone.$touched || reservationForm.phone.$dirty">
+                                <span ng-show="!reservationForm.phone.$valid" class="error">
                             Ο αριθμός τηλεφώνου δεν είναι έγκυρος. Ελάχιστο 10 αριθμοί.</span>
+                        </div>
                     </div>
                 </div>
 
@@ -68,8 +80,11 @@
                                           placeholder="Γράψτε το μήνυμά σας εδώ και θα σας απαντήσουμε άμεσα"
                                           ng-minlength="10"
                                           rows="3" required></textarea>
-                        <span ng-show="reservationForm.message.$dirty && !reservationForm.message.$valid" class="error">
-                            Το μήνυμά σας είναι πολύ μικρό. Παρακαλώ προσθέστε μερικές περισσότερες λέξεις.</span>
+
+                        <div ng-show="reservationForm.$submitted || form.phone.$touched || reservationForm.phone.$dirty">
+                            <span ng-show="!reservationForm.phone.$valid" class="error">
+                                Το μήνυμά σας είναι πολύ μικρό. Παρακαλώ προσθέστε μερικές περισσότερες λέξεις.</span>
+                        </div>
                     </div>
                 </div>
 
@@ -86,20 +101,44 @@
                              ng-model="reservationCtrl.reservation.gRecaptchaResponse"></div>
                     </div>
                 </div>
-				
+
                 <div class="form-group">
                     <div class="col-md-10 col-md-offset-1 text-center">
-                        <button type="submit" class="btn btn-primary btn-lg">Αποστολή</button>
+                        <input type="submit" ng-click="reservationForm.$valid && reservationCtrl.sendReservation()"
+                               class="btn btn-primary btn-lg" value="Αποστολή"/>
                     </div>
                 </div>
 
-                <div class="form-group">
-                    <div class="col-md-10 col-md-offset-1">
-                    </div>
-                </div>
+
             </fieldset>
+
         </form>
+
     </div>
 
 </div>
+<!-- Small modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button>
 
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Ευχαριστούμε!</h4>
+
+            </div>
+            <div class="modal-body text-center">
+                <span>Θα επικοινωνήσουμε μαζί σας σύντομα.</span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    (function () {
+        $('#myModal').modal();
+    });
+</script>

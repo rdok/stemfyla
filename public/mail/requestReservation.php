@@ -10,13 +10,14 @@ require_once "../../app/ReCAPTCHARetriever.class.php";
 
 // Google recaptcha preparations
 $siteKey = ReCAPTCHARetriever::retrieveSiteKey();
-$secret = ReCAPTCHARetriever::retrieveSecretKey();;
+$secret = ReCAPTCHARetriever::retrieveSecretKey();
+
 $lang = "el";
 // The response from reCAPTCHA
 $resp = null;
 // The error code from reCAPTCHA, if any
 $error = null;
-$reCaptcha = new ReCAPTCHARetriever($secret);
+$reCaptcha = new ReCaptcha($secret);
 
 // Retrieve data from angularjs
 $postdata = file_get_contents("php://input");

@@ -80,6 +80,7 @@
 
 
     app.controller('ReservationController', function ($http, $scope) {
+
         this.reservation = {};
         $scope.response = null;
         $scope.widgetId = null;
@@ -105,8 +106,7 @@
                 headers: {'Content-Type': 'application/x-www-form-urlencoded'}
             }).
                 success(function (data, status, headers, config) {
-                    alert("success");
-                    console.log(data);
+                    $('.bs-example-modal-sm').modal('toggle');
                 }).
                 error(function (data, status, headers, config) {
                     // In case of a failed validation you need to reload the captcha
