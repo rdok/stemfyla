@@ -8,7 +8,7 @@ use Mailgun\Mailgun;
 require_once "../../app/recaptchalib.php";
 require_once "../../app/ReCAPTCHARetriever.class.php";
 
-// Google recaptcha preparations
+// Google recaptcha preparations | ALERT: if you update this then also update public/app/js/main.js
 $siteKey = '6LeVuwATAAAAAGRlNwp-JRM_kwK5NqD0Q8vUfY_t';
 $secret = '6LeVuwATAAAAAGRaxc7ZvVCufdZQZpG7--GA9Z95';
 
