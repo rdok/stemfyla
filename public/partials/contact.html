@@ -39,16 +39,11 @@
                         <input name="lName" ng-model="reservationCtrl.reservation.lName" type="text"
                                placeholder="Επίθετο"
                                ng-minlength="3" required class="form-control">
-<<<<<<< HEAD
 
                         <div ng-show="reservationForm.$submitted || form.lName.$touched || reservationForm.lName.$dirty">
                             <span ng-show="!reservationForm.lName.$valid" class="error">
                                 Το Επίθετο είναι υποχρεωτικό. Ελάχιστο 3 χαρακτήρες.</span>
                         </div>
-=======
-                        <span ng-show="reservationForm.lName.$dirty && !reservationForm.lName.$valid" class="error">Το
-                            Το Επίθετο είναι υποχρεωτικό. Ελάχιστο 3 χαρακτήρες.</span>
->>>>>>> 71cc09c8788010e9e54a330659b7fb049aa6fb81
                     </div>
                 </div>
 
@@ -57,16 +52,11 @@
                         <input name="email" type="email" ng-model="reservationCtrl.reservation.email"
                                placeholder="Email"
                                class="form-control" required>
-<<<<<<< HEAD
 
                         <div ng-show="reservationForm.$submitted || form.email.$touched || reservationForm.email.$dirty">
                                 <span ng-show="!reservationForm.email.$valid" class="error">
-                                Η διεύθυνση ηλεκτρονικού ταχυδρομείου δεν είναι έγκυρη ή σε λάθος μορφή</span>
+                                Η διεύθυνση ηλεκτρονικού ταχυδρομείου δεν είναι έγκυρη.</span>
                         </div>
-=======
-                        <span ng-show="reservationForm.email.$dirty && !reservationForm.email.$valid" class="error">Η
-                            διεύθυνση ηλεκτρονικού ταχυδρομείου δεν είναι έγκυρη.</span>
->>>>>>> 71cc09c8788010e9e54a330659b7fb049aa6fb81
                     </div>
                 </div>
 
