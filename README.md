@@ -30,7 +30,8 @@ The below are valid when the project is already prepared. That is, no instructio
 
 ## Plugins
 - [Magnific-Popup](https://github.com/dimsemenov/Magnific-Popup) Fast, light and responsive lightbox plugin, for jQuery and Zepto.js.
-                                                                 
+- [Mailgun](https://mailgun.com/) Mailgun is an email automation service provided by Rackspace. It offers a complete cloud-based email service for sending, receiving and tracking email sent through your websites and applications
+- [recaptcha - Google](https://www.google.com/recaptcha/intro/index.html) A significant number of your users can now attest they are human without having to solve a CAPTCHA. Instead with just a single click they’ll confirm they are not a robot.                               
 
 ##Tools
 - [bower](http://bower.io/) Web sites are made of lots of things — frameworks, libraries, assets, utilities, and rainbows. Bower manages all these things for you.
