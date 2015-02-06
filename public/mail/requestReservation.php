@@ -1,10 +1,11 @@
 <?php
 require '../../vendor/autoload.php';
+Dotenv::load(__DIR__ . '/../..');
 use Mailgun\Mailgun;
 
 // if this functioncality becomes more complex then use a config.php file and use absolute paths instead of relative
-//require_once "../../app/recaptchalib.php";
-//require_once "../../app/ReCAPTCHARetriever.class.php";
+require_once "../../app/recaptchalib.php";
+require_once "../../app/ReCAPTCHARetriever.class.php";
 
 // Google recaptcha preparations | ALERT: if you update this then also update public/app/js/main.js
 $siteKey = getenv('RECAPTCHA_SITE_KEY');
@@ -51,7 +52,7 @@ $recipientEmail = getenv('RECIPIENT_CONTACT_EMAIL');
 
 # Now, compose and send the message.
 $mg->sendMessage($domain, ['from'                => 'no-reply@stemfyla.gr',
-                           'to'                  => 'nicolaosmathioudakis@gmail.com',
+                           'to'                  => $recipientEmail,
                            'subject'             => 'Stemfyla | Νέο αίτημα κράτησης',
                            'text'                => 'Your mail does not support html',
                            'html'                => $html,
