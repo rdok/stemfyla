@@ -80,6 +80,7 @@
                                           placeholder="Γράψτε το μήνυμά σας εδώ και θα σας απαντήσουμε άμεσα"
                                           ng-minlength="10"
                                           rows="3" required></textarea>
+
                         <div ng-show="reservationForm.$submitted || form.message.$touched || reservationForm.message.$dirty">
                             <span ng-show="!reservationForm.message.$valid" class="error">
                                 Το μήνυμά σας είναι πολύ μικρό. Παρακαλώ προσθέστε μερικές περισσότερες λέξεις.</span>
@@ -92,7 +93,7 @@
                         <div
                                 vc-recaptcha
                                 theme="'light'"
-                                key="model.key"
+                                key="model.RECAPTCHA_SITE_KEY"
                                 on-create="setWidgetId(widgetId)"
                                 on-success="setResponse(response)" class="pull-right"
                                 ></div>
@@ -117,7 +118,8 @@
 
 </div>
 
-<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+     aria-hidden="true">
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
             <div class="modal-header">
@@ -136,6 +138,6 @@
 </div>
 <script>
     (function () {
-        $('#myModal').modal();
+        $('#verificationModal').modal();
     });
 </script>
