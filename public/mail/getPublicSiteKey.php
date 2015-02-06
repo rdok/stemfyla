@@ -8,7 +8,10 @@
 require '../../vendor/autoload.php';
 
 // load config var
-Dotenv::load(__DIR__ . '/../..');
+if (!getenv('APP_ENV'))
+{
+	Dotenv::load(__DIR__ . '/../..');
+}
 
 $siteKey['RECAPTCHA_SITE_KEY'] = getenv('RECAPTCHA_SITE_KEY');
 

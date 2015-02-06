@@ -1,6 +1,10 @@
 <?php
 require '../../vendor/autoload.php';
-Dotenv::load(__DIR__ . '/../..');
+// See #14.
+if (!getenv('APP_ENV'))
+{
+	Dotenv::load(__DIR__ . '/../..');
+}
 use Mailgun\Mailgun;
 
 // if this functioncality becomes more complex then use a config.php file and use absolute paths instead of relative
