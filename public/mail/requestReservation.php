@@ -5,11 +5,9 @@ if (!getenv('APP_ENV'))
 {
 	Dotenv::load(__DIR__ . '/../..');
 }
-use Mailgun\Mailgun;
 
-// if this functioncality becomes more complex then use a config.php file and use absolute paths instead of relative
+use Mailgun\Mailgun;
 require_once "../../app/recaptchalib.php";
-require_once "../../app/ReCAPTCHARetriever.class.php";
 
 // Google recaptcha preparations | ALERT: if you update this then also update public/app/js/main.js
 $siteKey = getenv('RECAPTCHA_SITE_KEY');
